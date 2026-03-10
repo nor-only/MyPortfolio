@@ -3,122 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Collection</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            background: #0f0f0f;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 60px 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 300;
-            letter-spacing: 0.15em;
-            margin-bottom: 10px;
-        }
-        p.sub {
-            color: #888;
-            margin-bottom: 50px;
-            font-size: 0.95rem;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            width: 100%;
-        }
-        a.card {
-            display: block;
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            border-radius: 12px;
-            padding: 30px;
-            text-decoration: none;
-            color: #fff;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-        a.card:hover {
-            transform: translateY(-4px);
-            border-color: #555;
-        }
-        .card .num {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #666;
-            margin-bottom: 10px;
-        }
-        .card .title {
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin-bottom: 6px;
-        }
-        .card .desc {
-            font-size: 0.85rem;
-            color: #888;
-        }
-    </style>
+    <title>OKUDA Design - Creative Web Design Portfolio</title>
+    <meta name="description" content="白を基調とした洗練されたポートフォリオサイト。クリエイティブなWebデザインで、あなたのビジネスを成功へ導きます。">
+    <link rel="stylesheet" href="portfolio_1/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>PORTFOLIO</h1>
-    <p class="sub">Web Design Collection</p>
-    <div class="grid">
-        <a class="card" href="portfolio_1/">
-            <div class="num">01</div>
-            <div class="title">Portfolio Site</div>
-            <div class="desc">Personal portfolio</div>
-        </a>
-        <a class="card" href="portfolio_2/">
-            <div class="num">02</div>
-            <div class="title">Real Estate</div>
-            <div class="desc">Real estate company</div>
-        </a>
-        <a class="card" href="portfolio_3/">
-            <div class="num">03</div>
-            <div class="title">Corporate Site</div>
-            <div class="desc">Company website</div>
-        </a>
-        <a class="card" href="portfolio_4/">
-            <div class="num">04</div>
-            <div class="title">EC Shop</div>
-            <div class="desc">Online store</div>
-        </a>
-        <a class="card" href="portfolio_5/">
-            <div class="num">05</div>
-            <div class="title">Cafe</div>
-            <div class="desc">Coffee shop</div>
-        </a>
-        <a class="card" href="portfolio_6/">
-            <div class="num">06</div>
-            <div class="title">Medical</div>
-            <div class="desc">Dental clinic</div>
-        </a>
-        <a class="card" href="portfolio_7/">
-            <div class="num">07</div>
-            <div class="title">Ryokan</div>
-            <div class="desc">Japanese inn</div>
-        </a>
-        <a class="card" href="portfolio_8/">
-            <div class="num">08</div>
-            <div class="title">Hotel</div>
-            <div class="desc">Luxury hotel</div>
-        </a>
-        <a class="card" href="portfolio_9/">
-            <div class="num">09</div>
-            <div class="title">Tech</div>
-            <div class="desc">Web3 / Technology</div>
-        </a>
-        <a class="card" href="portfolio_10/">
-            <div class="num">10</div>
-            <div class="title">Camping</div>
-            <div class="desc">Outdoor / Camp</div>
-        </a>
-    </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <h1>OKUDA</h1>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="portfolio_1/about.html">About</a></li>
+                <li><a href="portfolio_1/works.html">Works</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-fullscreen">
+            <div class="hero-content">
+                <h1 class="hero-title">Design<br>for the Future</h1>
+                <p class="hero-description">
+                    白を基調とした洗練されたデザインで、<br>
+                    あなたのビジネスに新しい価値を創造します。
+                </p>
+                <div class="hero-buttons">
+                    <a href="portfolio_1/works.html" class="cta-button primary">View Works</a>
+                    <a href="portfolio_1/about.html" class="cta-button secondary">About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About</h2>
+                    <p class="section-subtitle">
+                        ミニマルで洗練されたデザインを通じて、<br>
+                        ブランドの本質を表現します。
+                    </p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>デザインでビジネスの価値を最大化</h3>
+                        <p>私たちは、美しさと機能性を兼ね備えたWebデザインを通じて、クライアント様のブランド価値向上とビジネス成長をサポートしています。</p>
+                        <p>ユーザー体験を重視した設計と、最新のWebテクノロジーを駆使して、競合他社との差別化を図ります。</p>
+                        <div class="philosophy">
+                            <h4>デザイン哲学</h4>
+                            <p>シンプルの中に美しさを見出し、細部への完璧性を追求する</p>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="portfolio_1/images/image16.jpg" alt="Design philosophy" class="about-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>OKUDA Design</h3>
+                    <p>白を基調とした洗練されたデザインで、あなたのビジネスに新しい価値を創造します。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contact@okuda-design.com</p>
+                    <p>Tel: 03-1234-5678</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OKUDA Design. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio_1/js/script.js"></script>
 </body>
 </html>
