@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>患者さまへ - 奥田歯科クリニック</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <div class="nav__logo">
+                        <a href="index.html" class="nav__logo-link">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-desktop" style="height: 80px;">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-mobile" style="height: 80px; display: none;">
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">トップ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">当院について</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="medical.html" class="nav__link">診療案内</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="treatment.html" class="nav__link">治療・検査</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="specialty.html" class="nav__link">専門外来</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="patients.html" class="nav__link active">患者さまへ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link">お知らせ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">ブログ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="section-header page-title-header">
+            <h1 class="section-title">患者さまへ</h1>
+            <p class="section-subtitle">For Patients</p>
+        </section>
+
+        <!-- Schedule & Contact Section -->
+        <section id="patients" class="patients" style="padding: var(--spacing-xl) 0;">
+            <div class="container">
+                <div class="patients__content">
+                    <div class="info-cards" style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: var(--spacing-lg); margin-bottom: var(--spacing-xxl);">
+                        <div class="info-card" style="background: var(--bg-card); padding: var(--spacing-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); flex: 0 1 350px; display: flex; flex-direction: column; min-height: 280px;">
+                            <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; text-align: center;">診療時間</h3>
+                            <div class="schedule" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                                <div class="schedule-item" style="display: flex; justify-content: space-between; padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); font-size: 1rem;">
+                                    <span style="font-weight: 500;">平日</span>
+                                    <span>9:00-12:30 / 14:30-18:00</span>
+                                </div>
+                                <div class="schedule-item" style="display: flex; justify-content: space-between; padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); font-size: 1rem;">
+                                    <span style="font-weight: 500;">土曜</span>
+                                    <span>9:00-13:00</span>
+                                </div>
+                                <div class="schedule-item" style="display: flex; justify-content: space-between; padding: var(--spacing-sm) 0; font-size: 1rem;">
+                                    <span style="font-weight: 500; color: var(--accent-color);">休診</span>
+                                    <span>日曜・祝日</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card" style="background: var(--bg-card); padding: var(--spacing-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); flex: 0 1 350px; display: flex; flex-direction: column; min-height: 280px;">
+                            <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; text-align: center;">アクセス</h3>
+                            <div class="access-info" style="flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                                <p style="margin-bottom: var(--spacing-sm); font-size: 1rem; line-height: 1.6;">〒100-8111<br>東京都千代田区千代田1-1</p>
+                                <p style="margin-bottom: var(--spacing-sm); font-size: 1rem; line-height: 1.6;">JR東京駅 徒歩5分</p>
+                                <p style="font-size: 1rem; line-height: 1.6; color: var(--accent-color); font-weight: 500;">駐車場完備（8台）</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card" style="background: var(--bg-card); padding: var(--spacing-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); flex: 0 1 350px; display: flex; flex-direction: column; min-height: 280px;">
+                            <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; text-align: center;">ご予約・お問い合わせ</h3>
+                            <div class="contact-info" style="flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                                <div class="phone-number" style="font-size: 1.8rem; font-weight: 600; color: var(--primary-color); margin-bottom: var(--spacing-sm);">03-1234-5678</div>
+                                <p style="margin-bottom: var(--spacing-md); font-size: 1rem; line-height: 1.6; color: var(--text-secondary);">初診の方もお気軽にお電話ください</p>
+                                <a href="#" class="btn btn--small" style="display: inline-block; background: var(--gradient-accent); color: white; padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md); text-decoration: none; font-size: 0.9rem; font-weight: 500;">オンライン予約</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- First Visit Section -->
+        <section class="first-visit-section" style="padding: var(--spacing-xxl) 0; background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: var(--spacing-sm); color: var(--text-primary);">初診の方へ</h2>
+                    <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-secondary);">First Visit Information</p>
+                </div>
+                
+                <div class="first-visit-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: var(--spacing-xl); margin-top: var(--spacing-xl);">
+                    <div class="first-visit-card" style="background: var(--bg-primary); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 500; border-bottom: 3px solid var(--gradient-pink); padding-bottom: var(--spacing-sm); display: inline-block;">ご来院時の持ち物</h3>
+                        <ul class="checklist" style="list-style: none; padding: 0;">
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light);">✓ 健康保険証</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light);">✓ お薬手帳（お持ちの方）</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light);">✓ 紹介状（お持ちの方）</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light);">✓ 母子手帳（小児の場合）</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6;">✓ 過去の検査結果（お持ちの方）</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="first-visit-card" style="background: var(--bg-primary); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 500; border-bottom: 3px solid var(--gradient-purple); padding-bottom: var(--spacing-sm); display: inline-block;">受診の流れ</h3>
+                        <div class="flow-steps">
+                            <div class="flow-step" style="display: flex; align-items: start; margin-bottom: var(--spacing-lg); padding-bottom: var(--spacing-md); border-bottom: 1px solid var(--border-light);">
+                                <div class="step-number" style="background: var(--gradient-accent); color: white; width: 2.5rem; height: 2.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1.1rem; margin-right: var(--spacing-md); flex-shrink: 0;">1</div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: var(--spacing-xs); color: var(--text-primary); font-weight: 500;">受付</h4>
+                                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">保険証をご提示ください</p>
+                                </div>
+                            </div>
+                            <div class="flow-step" style="display: flex; align-items: start; margin-bottom: var(--spacing-lg); padding-bottom: var(--spacing-md); border-bottom: 1px solid var(--border-light);">
+                                <div class="step-number" style="background: var(--gradient-accent); color: white; width: 2.5rem; height: 2.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1.1rem; margin-right: var(--spacing-md); flex-shrink: 0;">2</div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: var(--spacing-xs); color: var(--text-primary); font-weight: 500;">問診票記入</h4>
+                                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">症状について詳しくお書きください</p>
+                                </div>
+                            </div>
+                            <div class="flow-step" style="display: flex; align-items: start; margin-bottom: var(--spacing-lg); padding-bottom: var(--spacing-md); border-bottom: 1px solid var(--border-light);">
+                                <div class="step-number" style="background: var(--gradient-accent); color: white; width: 2.5rem; height: 2.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1.1rem; margin-right: var(--spacing-md); flex-shrink: 0;">3</div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: var(--spacing-xs); color: var(--text-primary); font-weight: 500;">診察</h4>
+                                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">医師による診察・検査を行います</p>
+                                </div>
+                            </div>
+                            <div class="flow-step" style="display: flex; align-items: start;">
+                                <div class="step-number" style="background: var(--gradient-accent); color: white; width: 2.5rem; height: 2.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1.1rem; margin-right: var(--spacing-md); flex-shrink: 0;">4</div>
+                                <div>
+                                    <h4 style="font-size: 1.2rem; margin-bottom: var(--spacing-xs); color: var(--text-primary); font-weight: 500;">会計</h4>
+                                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">受付にて診療費をお支払いください</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" style="padding: var(--spacing-xxl) 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: var(--spacing-sm); color: var(--text-primary);">よくあるご質問</h2>
+                    <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-secondary);">Frequently Asked Questions</p>
+                </div>
+                
+                <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item" style="background: var(--bg-card); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 class="faq-question" style="font-size: 1.3rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; border-left: 4px solid var(--gradient-pink); padding-left: var(--spacing-md);">予約は必要ですか？</h3>
+                        <p class="faq-answer" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-left: var(--spacing-lg);">一般診療は予約不要ですが、専門外来は完全予約制となっております。お電話にてご予約をお取りください。</p>
+                    </div>
+                    
+                    <div class="faq-item" style="background: var(--bg-card); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 class="faq-question" style="font-size: 1.3rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; border-left: 4px solid var(--gradient-purple); padding-left: var(--spacing-md);">何歳から診療していただけますか？</h3>
+                        <p class="faq-answer" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-left: var(--spacing-lg);">乳歯が生え始めた頃（生後6ヶ月頃）から高齢者まで、すべての年齢の方を診療いたします。小児歯科専門外来もございます。</p>
+                    </div>
+                    
+                    <div class="faq-item" style="background: var(--bg-card); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 class="faq-question" style="font-size: 1.3rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; border-left: 4px solid var(--gradient-pink); padding-left: var(--spacing-md);">駐車場はありますか？</h3>
+                        <p class="faq-answer" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-left: var(--spacing-lg);">はい、8台分の駐車場を完備しております。満車の場合は近隣のコインパーキングをご利用ください。</p>
+                    </div>
+                    
+                    <div class="faq-item" style="background: var(--bg-card); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 class="faq-question" style="font-size: 1.3rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; border-left: 4px solid var(--gradient-purple); padding-left: var(--spacing-md);">紹介状は必要ですか？</h3>
+                        <p class="faq-answer" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-left: var(--spacing-lg);">紹介状がなくても受診いただけます。お持ちの場合は、より詳しい情報をもとに診療できますのでご持参ください。</p>
+                    </div>
+                    
+                    <div class="faq-item" style="background: var(--bg-card); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 class="faq-question" style="font-size: 1.3rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; border-left: 4px solid var(--gradient-pink); padding-left: var(--spacing-md);">検査にはどのくらい時間がかかりますか？</h3>
+                        <p class="faq-answer" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-left: var(--spacing-lg);">検査内容によって異なりますが、一般的な歯科検診は約30分、レントゲン撮影は約5分程度です。詳しくは受診時にご説明いたします。</p>
+                    </div>
+                    
+                    <div class="faq-item" style="background: var(--bg-card); padding: var(--spacing-lg); margin-bottom: var(--spacing-md); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 class="faq-question" style="font-size: 1.3rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; border-left: 4px solid var(--gradient-purple); padding-left: var(--spacing-md);">薬の処方について教えてください</h3>
+                        <p class="faq-answer" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0; padding-left: var(--spacing-lg);">院外処方となっております。処方せんをお渡ししますので、お近くの調剤薬局でお薬をお受け取りください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment & Insurance Section -->
+        <section class="payment-section" style="padding: var(--spacing-xxl) 0; background: var(--bg-secondary);">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: var(--spacing-sm); color: var(--text-primary);">お支払い・保険について</h2>
+                    <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-secondary);">Payment & Insurance</p>
+                </div>
+                
+                <div class="payment-info" style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: var(--spacing-xl);">
+                    <div class="payment-card" style="background: var(--bg-primary); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); flex: 0 1 350px; display: flex; flex-direction: column; min-height: 300px;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 500; border-bottom: 3px solid var(--gradient-pink); padding-bottom: var(--spacing-sm); display: inline-block; align-self: center;">対応保険</h3>
+                        <ul style="list-style: none; padding: 0; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• 各種健康保険</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• 国民健康保険</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• 後期高齢者医療制度</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• 乳幼児医療証</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• ひとり親家庭等医療証</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; text-align: center;">• 生活保護医療券</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="payment-card" style="background: var(--bg-primary); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); flex: 0 1 350px; display: flex; flex-direction: column; min-height: 300px;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 500; border-bottom: 3px solid var(--gradient-purple); padding-bottom: var(--spacing-sm); display: inline-block; align-self: center;">お支払い方法</h3>
+                        <ul style="list-style: none; padding: 0; flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• 現金</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• 各種クレジットカード</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• 電子マネー</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; text-align: center;">• QRコード決済</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="payment-card" style="background: var(--bg-primary); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); flex: 0 1 350px; display: flex; flex-direction: column; min-height: 300px;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 500; border-bottom: 3px solid var(--accent-color); padding-bottom: var(--spacing-sm); display: inline-block; align-self: center;">自費診療</h3>
+                        <ul style="list-style: none; padding: 0; margin-bottom: var(--spacing-md); flex: 1; display: flex; flex-direction: column; justify-content: center;">
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• ホワイトニング</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• インプラント治療</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; border-bottom: 1px solid var(--border-light); text-align: center;">• 審美歯科治療</li>
+                            <li style="padding: var(--spacing-sm) 0; font-size: 1.1rem; line-height: 1.6; text-align: center;">• 矯正歯科治療</li>
+                        </ul>
+                        <p class="note" style="font-size: 0.95rem; color: var(--text-light); background: var(--bg-light); padding: var(--spacing-sm); border-radius: var(--radius-sm); margin: 0; text-align: center;">料金については受付にお問い合わせください</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section" style="padding: var(--spacing-xxl) 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: var(--spacing-sm); color: var(--text-primary);">アクセスマップ</h2>
+                    <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-secondary);">Access Map</p>
+                </div>
+                
+                <div class="map-content" style="display: grid; grid-template-columns: 1fr 400px; gap: var(--spacing-xl); align-items: start;">
+                    <div class="map-container" style="background: var(--bg-light); border-radius: var(--radius-lg); height: 400px; overflow: hidden; box-shadow: var(--shadow-soft);">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853805191!2d139.75099831525393!3d35.685175680198324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0d02d8064d%3A0x7843d2d7ca0e8c3c!2z55qH5bGF!5e0!3m2!1sja!2sjp!4v1642345678901!5m2!1sja!2sjp" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; border-radius: var(--radius-lg);" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div class="access-details" style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 style="font-size: 1.6rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 500; border-bottom: 3px solid var(--gradient-accent); padding-bottom: var(--spacing-sm); display: inline-block;">交通アクセス</h3>
+                        <div class="access-item" style="margin-bottom: var(--spacing-lg); padding-bottom: var(--spacing-md); border-bottom: 1px solid var(--border-light);">
+                            <h4 style="font-size: 1.2rem; margin-bottom: var(--spacing-sm); color: var(--text-primary); font-weight: 500;">電車でお越しの方</h4>
+                            <p style="font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">JR東京駅 丸の内南口より徒歩5分</p>
+                        </div>
+                        
+                        <div class="access-item" style="margin-bottom: var(--spacing-lg); padding-bottom: var(--spacing-md); border-bottom: 1px solid var(--border-light);">
+                            <h4 style="font-size: 1.2rem; margin-bottom: var(--spacing-sm); color: var(--text-primary); font-weight: 500;">バスでお越しの方</h4>
+                            <p style="font-size: 1.05rem; line-height: 1.6; color: var(--text-secondary); margin: 0;">都営バス「皮府前」停留所より徒歩3分</p>
+                        </div>
+                        
+                        <div class="access-item">
+                            <h4 style="font-size: 1.2rem; margin-bottom: var(--spacing-sm); color: var(--text-primary); font-weight: 500;">お車でお越しの方</h4>
+                            <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary); margin: 0;">駐車場8台完備（無料）<br>
+                            満車の場合は近隣のコインパーキングをご利用ください</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="footer__logo" style="height: 80px; margin-bottom: 20px;">
+                    <div class="footer__contact">
+                        <p>〒100-8111 東京都千代田区千代田1-1</p>
+                        <p>TEL: 03-1234-5678</p>
+                        <p>JR東京駅 徒歩5分</p>
+                    </div>
+                </div>
+                
+                <div class="footer__hours">
+                    <h4>診療時間</h4>
+                    <div class="footer-schedule-table-wrapper">
+                        <table class="footer-schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-label">09:00-12:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot special">▲</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-label">14:00-17:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot closed">/</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 奥田歯科クリニック. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

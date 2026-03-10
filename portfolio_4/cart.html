@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カート - 奥田農園</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Hachi+Maru+Pop&family=Kosugi+Maru&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo">奥田農園</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="products.html">農作物</a></li>
+                <li><a href="about.html">私たちについて</a></li>
+                <li><a href="shop.html">オンラインショップ</a></li>
+                <li><a href="blog.html">農園日記</a></li>
+                <li><a href="contact.html" class="cta-button">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>ショッピングカート</h1>
+                <p>お選びいただいた商品をご確認ください。</p>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <div class="container">
+                <div class="cart-content">
+                    <div class="cart-items">
+                        <h3>ショッピングカート</h3>
+                        <div class="cart-items-content" id="cart-items">
+                            <!-- カート商品がここに表示されます -->
+                        </div>
+                    </div>
+                    
+                    <div class="cart-empty" id="cart-empty" style="display: block;">
+                        <div class="empty-message">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3>カートは空です</h3>
+                            <p>商品をカートに追加してください。</p>
+                            <a href="shop.html" class="btn-primary">ショップに戻る</a>
+                        </div>
+                    </div>
+
+                    <div class="cart-summary" id="cart-summary" style="display: none;">
+                        <div class="summary-content">
+                            <h3>合計</h3>
+                            <div class="summary-row">
+                                <span>小計:</span>
+                                <span id="subtotal">¥0</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>送料:</span>
+                                <span id="shipping">¥500</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>合計:</span>
+                                <span id="total">¥500</span>
+                            </div>
+                            <div class="cart-actions">
+                                <a href="shop.html" class="btn-secondary">買い物を続ける</a>
+                                <a href="checkout.html" class="btn-primary">注文に進む</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>奥田農園</h3>
+                    <p>広島の豊かな自然の恵みを皆様にお届けします。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>リンク</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">私たちについて</a></li>
+                        <li><a href="products.html">農作物</a></li>
+                        <li><a href="shop.html">オンラインショップ</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <p>〒123-4567 広島県○○市○○町1-2-3</p>
+                    <p>電話: 082-123-4567</p>
+                    <p>Email: info@okuda-farm.jp</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 奥田農園. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

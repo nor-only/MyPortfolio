@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オンラインショップ - 奥田農園</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Hachi+Maru+Pop&family=Kosugi+Maru&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo">奥田農園</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="products.html">農作物</a></li>
+                <li><a href="about.html">私たちについて</a></li>
+                <li><a href="shop.html">オンラインショップ</a></li>
+                <li><a href="blog.html">農園日記</a></li>
+                <li><a href="contact.html" class="cta-button">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>オンラインショップ</h1>
+                <p>新鮮な農作物を全国各地にお届けします。</p>
+            </div>
+        </section>
+
+        <section class="shop-section">
+            <div class="container">
+                <div class="shop-featured">
+                    <h3>今週のおすすめセット</h3>
+                    <div class="featured-products">
+                        <div class="featured-item product-item" data-id="winter-set" data-name="冬の恵みセット" data-price="3800" data-image="images/kome.jpeg">
+                            <div class="featured-image seasonal-set"></div>
+                            <div class="featured-content">
+                                <h4>冬の恵みセット</h4>
+                                <p>新米2kg、冬野菜詰め合わせ、みかん1kgがセットになった人気商品です。</p>
+                                <div class="price">3,800円（税込・送料別）</div>
+                                <button class="btn-primary add-to-cart">カートに追加</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-products">
+                    <h3>商品一覧</h3>
+                    <div class="products-grid">
+                        <div class="product-item" data-id="rice-5kg" data-name="コシヒカリ 5kg" data-price="2800" data-image="images/kome.jpeg">
+                            <div class="product-image">
+                                <img src="images/kome.jpeg" alt="コシヒカリ 5kg">
+                            </div>
+                            <div class="product-info">
+                                <h4>コシヒカリ 5kg</h4>
+                                <p>農園自慢のコシヒカリ。粘りと甘みが自慢です。</p>
+                                <div class="product-price">¥2,800</div>
+                                <button class="btn-primary add-to-cart">カートに追加</button>
+                            </div>
+                        </div>
+
+                        <div class="product-item" data-id="rice-10kg" data-name="コシヒカリ 10kg" data-price="5200" data-image="images/kome1.jpeg">
+                            <div class="product-image">
+                                <img src="images/kome1.jpeg" alt="コシヒカリ 10kg">
+                            </div>
+                            <div class="product-info">
+                                <h4>コシヒカリ 10kg</h4>
+                                <p>お得な10kgサイズ。ご家族でたくさん食べる方におすすめ。</p>
+                                <div class="product-price">¥5,200</div>
+                                <button class="btn-primary add-to-cart">カートに追加</button>
+                            </div>
+                        </div>
+
+                        <div class="product-item" data-id="vegetables-mix" data-name="季節野菜詰め合わせ" data-price="1500" data-image="images/yasai1.jpeg">
+                            <div class="product-image">
+                                <img src="images/yasai1.jpeg" alt="季節野菜詰め合わせ">
+                            </div>
+                            <div class="product-info">
+                                <h4>季節野菜詰め合わせ</h4>
+                                <p>旬の野菜を5〜7種類詰め合わせました。</p>
+                                <div class="product-price">¥1,500</div>
+                                <button class="btn-primary add-to-cart">カートに追加</button>
+                            </div>
+                        </div>
+
+                        <div class="product-item" data-id="winter-vegetables" data-name="冬野菜セット" data-price="1800" data-image="images/yasai2.jpeg">
+                            <div class="product-image">
+                                <img src="images/yasai2.jpeg" alt="冬野菜セット">
+                            </div>
+                            <div class="product-info">
+                                <h4>冬野菜セット</h4>
+                                <p>白菜、大根、ほうれん草など冬の味覚を厳選。</p>
+                                <div class="product-price">¥1,800</div>
+                                <button class="btn-primary add-to-cart">カートに追加</button>
+                            </div>
+                        </div>
+
+                        <div class="product-item" data-id="fruits-mix" data-name="季節の果物セット" data-price="2200" data-image="images/fruits.jpeg">
+                            <div class="product-image">
+                                <img src="images/fruits.jpeg" alt="季節の果物セット">
+                            </div>
+                            <div class="product-info">
+                                <h4>季節の果物セット</h4>
+                                <p>旬の果物を3〜4種類セットにしました。</p>
+                                <div class="product-price">¥2,200</div>
+                                <button class="btn-primary add-to-cart">カートに追加</button>
+                            </div>
+                        </div>
+
+                        <div class="product-item" data-id="apple-box" data-name="りんご 3kg箱" data-price="1900" data-image="images/apple.jpeg">
+                            <div class="product-image">
+                                <img src="images/apple.jpeg" alt="りんご 3kg箱">
+                            </div>
+                            <div class="product-info">
+                                <h4>りんご 3kg箱</h4>
+                                <p>蜜たっぷりの甘いりんごを箱詰めでお届け。</p>
+                                <div class="product-price">¥1,900</div>
+                                <button class="btn-primary add-to-cart">カートに追加</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-categories">
+                    <h3>商品カテゴリー</h3>
+                    <div class="category-grid">
+                        <div class="category-card">
+                            <div class="category-image vegetables"></div>
+                            <div class="category-content">
+                                <h4>野菜</h4>
+                                <p>季節の新鮮な野菜を各種取り揃えています。</p>
+                                <a href="#" class="btn-secondary">商品を見る</a>
+                            </div>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-image rice"></div>
+                            <div class="category-content">
+                                <h4>お米</h4>
+                                <p>こだわりのコシヒカリを各種サイズでご用意。</p>
+                                <a href="#" class="btn-secondary">商品を見る</a>
+                            </div>
+                        </div>
+                        <div class="category-card">
+                            <div class="category-image fruits"></div>
+                            <div class="category-content">
+                                <h4>果物</h4>
+                                <p>季節に応じた甘くて美味しい果物です。</p>
+                                <a href="#" class="btn-secondary">商品を見る</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-info">
+                    <h3>ご利用案内</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-truck"></i>
+                            <h4>配送について</h4>
+                            <p>全国配送対応。クール便での配送も承ります。</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-credit-card"></i>
+                            <h4>お支払い方法</h4>
+                            <p>クレジットカード、銀行振込、代金引換をご利用いただけます。</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>品質保証</h4>
+                            <p>新鮮な状態でお届けします。万が一の場合は返品・交換承ります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>奥田農園</h3>
+                    <p>〒000-0000 広島県○○市○○町1-1</p>
+                    <p>TEL: 0000-00-0000</p>
+                    <p>Email: info@okuda-farm.com</p>
+                </div>
+                <div class="footer-links">
+                    <a href="products.html">農作物</a>
+                    <a href="about.html">私たちについて</a>
+                    <a href="shop.html">オンラインショップ</a>
+                    <a href="blog.html">農園日記</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 奥田農園. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

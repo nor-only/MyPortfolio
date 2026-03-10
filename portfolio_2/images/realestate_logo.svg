@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2340 1679.28">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #4d4d4d;
+      }
+
+      .cls-2 {
+        font-family: Poppins-Bold, Poppins;
+        font-size: 270.74px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Font">
+    <text class="cls-2" transform="translate(324.38 1515.21)"><tspan x="0" y="0">REAL ESTATE</tspan></text>
+  </g>
+  <g id="Logo">
+    <g>
+      <rect class="cls-1" x="1120.84" y="852.33" width="95.11" height="95.11"/>
+      <path class="cls-1" d="M1168.4,41.24L504.18,603.64v593.92h1004.93v-431.85l-267.09-226.15,60.96-51.62,271.8,230.13v479.49h95.11v-523.58l-427.87-362.25,49.33-41.76,446.15,377.72v549.87h95.11v-593.92L1168.4,41.24ZM599.29,647.7l569.11-481.82,49.36,41.79-550.79,466.29v428.5h-67.68v-454.76ZM1414,809.78v292.68h-491.16v-292.68l245.56-207.9,245.6,207.9ZM1229.4,425.65l-401.67,340.07v336.74h-65.65v-384.4l406.36-344.02,60.96,51.62Z"/>
+    </g>
+  </g>
+</svg>

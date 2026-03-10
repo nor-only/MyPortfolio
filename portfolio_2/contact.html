@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | 奥田不動産 - 無料相談随時受付中</title>
+    <meta name="description" content="奥田不動産へのお問い合わせ。不動産に関するご相談は無料で承ります。賃貸、売買、投資、管理まで、お気軽にご連絡ください。">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- ヘッダー -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/realestate_logo.svg" alt="奥田不動産">
+                    <h1>奥田不動産</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="services.html">サービス</a></li>
+                    <li><a href="properties.html">物件情報</a></li>
+                    <li><a href="testimonials.html">お客様の声</a></li>
+                    <li><a href="contact.html" class="nav-contact-btn">お問い合わせ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text-content">
+                    <h1>お気軽に<br><span class="highlight">無料相談</span><br>承ります</h1>
+                    <p class="hero-subtitle">不動産に関するどんなご相談でも、まずはお気軽にお問い合わせください。経験豊富な専門スタッフが、お客様のご要望に応じて最適なソリューションをご提案いたします。</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">24時間</span>
+                            <span class="stat-label">以内回答</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">無料</span>
+                            <span class="stat-label">初回相談</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">年中無休</span>
+                            <span class="stat-label">対応可能</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="images/selective-focus-of-paper-house-on-blue-wooden-desk-2024-11-19-12-43-35-utc.jpg" alt="奥田不動産への相談">
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォームセクション -->
+        <section class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Contact Form</div>
+                    <h2 class="section-title">お問い合わせフォーム</h2>
+                    <p class="section-description">下記フォームより詳細なご相談内容をお聞かせください。24時間以内にご回答いたします。</p>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form-main">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">お名前 *</label>
+                                <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="kana">フリガナ *</label>
+                                <input type="text" id="kana" name="kana" placeholder="ヤマダ タロウ" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">メールアドレス *</label>
+                                <input type="email" id="email" name="email" placeholder="yamada@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">電話番号 *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="03-1234-5678" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="inquiry-type">お問い合わせ種類 *</label>
+                                <select id="inquiry-type" name="inquiry-type" required>
+                                    <option value="">選択してください</option>
+                                    <option value="rent-find">賃貸物件をお探し</option>
+                                    <option value="rent-list">賃貸物件を貸したい</option>
+                                    <option value="buy-find">売買物件をお探し</option>
+                                    <option value="sell-property">不動産を売却したい</option>
+                                    <option value="investment">投資物件のご相談</option>
+                                    <option value="management">物件管理のご依頼</option>
+                                    <option value="loan">住宅ローンのご相談</option>
+                                    <option value="renovation">リフォーム・リノベーション</option>
+                                    <option value="other">その他のご相談</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="urgency">お急ぎ度</label>
+                                <select id="urgency" name="urgency">
+                                    <option value="">選択してください</option>
+                                    <option value="urgent">至急（1週間以内）</option>
+                                    <option value="soon">お早めに（1ヶ月以内）</option>
+                                    <option value="flexible">時期は相談可能</option>
+                                    <option value="information">情報収集段階</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="budget">ご予算</label>
+                                <select id="budget" name="budget">
+                                    <option value="">選択してください</option>
+                                    <optgroup label="賃貸の場合">
+                                        <option value="rent-30000">3万円以下</option>
+                                        <option value="rent-50000">3万円〜5万円</option>
+                                        <option value="rent-70000">5万円〜7万円</option>
+                                        <option value="rent-100000">7万円〜10万円</option>
+                                        <option value="rent-over">10万円以上</option>
+                                    </optgroup>
+                                    <optgroup label="売買の場合">
+                                        <option value="buy-1000">1,000万円以下</option>
+                                        <option value="buy-2000">1,000万円〜2,000万円</option>
+                                        <option value="buy-3000">2,000万円〜3,000万円</option>
+                                        <option value="buy-5000">3,000万円〜5,000万円</option>
+                                        <option value="buy-over">5,000万円以上</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="area">ご希望エリア</label>
+                                <select id="area" name="area">
+                                    <option value="">選択してください</option>
+                                    <option value="shinjuku">新宿区</option>
+                                    <option value="shibuya">渋谷区</option>
+                                    <option value="minato">港区</option>
+                                    <option value="chiyoda">千代田区</option>
+                                    <option value="chuo">中央区</option>
+                                    <option value="setagaya">世田谷区</option>
+                                    <option value="other">その他の地域</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="desired-contact">ご希望の連絡方法</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="contact-method" value="email">
+                                    <span class="checkbox-text">メール</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="contact-method" value="phone">
+                                    <span class="checkbox-text">電話</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="contact-method" value="visit">
+                                    <span class="checkbox-text">来店相談</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-time">ご都合の良い時間帯</label>
+                            <select id="contact-time" name="contact-time">
+                                <option value="">選択してください</option>
+                                <option value="morning">午前中（9:00-12:00）</option>
+                                <option value="afternoon">午後（13:00-17:00）</option>
+                                <option value="evening">夕方以降（17:00-19:00）</option>
+                                <option value="weekend">土日祝日</option>
+                                <option value="anytime">いつでも可能</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">詳細・ご要望 *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="ご相談内容やご要望を詳しくお聞かせください。
+
+例）
+・家族構成や生活スタイル
+・通勤・通学先
+・重視したい条件（立地、設備、価格など）
+・現在のお住まいの状況
+・その他ご質問やご不明な点"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkbox-text">物件情報やお得な情報をメールで受け取る</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label required">
+                                <input type="checkbox" name="privacy" value="agree" required>
+                                <span class="checkbox-text">プライバシーポリシーに同意する *</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="cta-button form-submit">お問い合わせを送信</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 直接連絡先セクション -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Direct Contact</div>
+                    <h2 class="section-title">直接のお問い合わせ</h2>
+                    <p class="section-description">お急ぎの場合は、お電話またはメールで直接ご連絡ください。</p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-10.svg" alt="電話問い合わせ"></div>
+                        <h3>お電話でのお問い合わせ</h3>
+                        <p><strong style="font-size: 1.5rem; color: var(--primary-blue);">03-1234-5678</strong></p>
+                        <p><strong>受付時間：</strong><br>
+                        平日 9:00〜19:00<br>
+                        土曜 9:00〜18:00<br>
+                        日祝 10:00〜17:00</p>
+                        <p style="font-size: var(--font-small); color: var(--text-light);">※定休日：毎週水曜日<br>※事前予約で水曜日も対応可能</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-20.svg" alt="メール問い合わせ"></div>
+                        <h3>メールでのお問い合わせ</h3>
+                        <p><strong>info@okuda-realestate.co.jp</strong></p>
+                        <p><strong>受付時間：</strong> 24時間受付<br>
+                        <strong>返信時間：</strong> 営業時間内に返信<br>
+                        （緊急時は営業時間外も対応）</p>
+                        <p style="font-size: var(--font-small); color: var(--text-light);">※添付ファイルがある場合は10MB以下でお願いします</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-09.svg" alt="来店相談"></div>
+                        <h3>来店でのご相談</h3>
+                        <p><strong>完全予約制</strong></p>
+                        <p>ゆっくりとご相談いただけるよう、事前のご予約をお願いしております。</p>
+                        <p><strong>相談時間：</strong> 1組様約60分<br>
+                        <strong>駐車場：</strong> 8台完備<br>
+                        <strong>設備：</strong> キッズスペース、Wi-Fi完備</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-12.svg" alt="LINE公式アカウント"></div>
+                        <h3>LINE公式アカウント</h3>
+                        <p><strong>ID: @okuda-realestate</strong></p>
+                        <p>LINEでも気軽にお問い合わせいただけます。物件情報の配信も行っています。</p>
+                        <p><strong>受付時間：</strong> 9:00〜19:00<br>
+                        <strong>返信時間：</strong> 原則1時間以内</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-08.svg" alt="出張相談サービス"></div>
+                        <h3>出張相談サービス</h3>
+                        <p><strong>無料出張相談</strong></p>
+                        <p>お忙しい方、小さなお子様がいらっしゃる方のために、ご指定の場所へお伺いいたします。</p>
+                        <p><strong>対応エリア：</strong> 東京都内全域<br>
+                        <strong>相談料：</strong> 無料<br>
+                        <strong>所要時間：</strong> 約60〜90分</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-12.svg" alt="オンライン相談"></div>
+                        <h3>オンライン相談</h3>
+                        <p><strong>Zoom・Skype対応</strong></p>
+                        <p>遠方の方や外出が困難な方のために、オンライン相談も承っております。</p>
+                        <p><strong>対応時間：</strong> 平日夜間・土日祝日も可<br>
+                        <strong>相談料：</strong> 無料<br>
+                        <strong>時間：</strong> 30分〜60分</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくある質問セクション -->
+        <section class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">FAQ</div>
+                    <h2 class="section-title">よくあるご質問</h2>
+                    <p class="section-description">お客様からよく寄せられるご質問をまとめました。</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-19.svg" alt="相談料"></div>
+                        <h3 class="service-title">相談料はかかりますか？</h3>
+                        <p class="service-description">初回相談は完全無料です。お気軽にご相談ください。契約に至らなくても費用は一切発生いたしません。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-13.svg" alt="物件探し期間"></div>
+                        <h3 class="service-title">どのくらいで物件を見つけられますか？</h3>
+                        <p class="service-description">お客様のご希望条件によりますが、平均して1〜2週間程度で複数の候補物件をご提案できます。お急ぎの場合は最短即日でのご紹介も可能です。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-15.svg" alt="仲介手数料"></div>
+                        <h3 class="service-title">仲介手数料はいくらですか？</h3>
+                        <p class="service-description">宅地建物取引業法で定められた上限額（賃料の1ヶ月分、売買価格の3%+6万円）以内で、物件により異なります。詳しくはお問い合わせください。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-14.svg" alt="内見予約"></div>
+                        <h3 class="service-title">内見の予約は必要ですか？</h3>
+                        <p class="service-description">はい、事前のご予約をお願いしております。お電話またはメールで、ご希望の日時をお聞かせください。複数物件の同日内見も可能です。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-06.svg" alt="必要書類"></div>
+                        <h3 class="service-title">契約に必要な書類は？</h3>
+                        <p class="service-description">身分証明書、収入証明書、印鑑などが必要です。詳細は物件により異なりますので、ご相談時に詳しくご説明いたします。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-16.svg" alt="駐車場"></div>
+                        <h3 class="service-title">駐車場はありますか？</h3>
+                        <p class="service-description">本社に8台分の専用駐車場をご用意しております。満車の場合は近隣のコインパーキングをご案内いたします（駐車料金は当社負担）。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アクセス情報セクション -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Access & Map</div>
+                    <h2 class="section-title">アクセス・地図</h2>
+                    <p class="section-description">奥田不動産本社へのアクセス方法をご案内いたします。</p>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="images/empty-white-toy-house-on-a-light-gray-background-w-2024-12-05-01-42-04-utc.jpg" alt="奥田不動産本社外観">
+                    </div>
+                    
+                    <div class="hero-text-content">
+                        <h3 style="font-size: var(--font-large); margin-bottom: 1.5rem; color: var(--text-dark);">📍 奥田不動産 本社</h3>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <p style="margin-bottom: 0.5rem;"><strong>住所：</strong> 〒100-0001 東京都千代田区千代田1-1-1 奥田ビル1-3階</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>TEL：</strong> 03-1234-5678</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>FAX：</strong> 03-1234-5679</p>
+                            <p style="margin-bottom: 1rem;"><strong>Email：</strong> info@okuda-realestate.co.jp</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 1rem; color: var(--primary-blue);">🚃 公共交通機関でお越しの方</h4>
+                            <p style="margin-bottom: 0.5rem;">• JR東京駅より徒歩5分</p>
+                            <p style="margin-bottom: 0.5rem;">• 東京メトロ千代田線「二重橋前」駅より徒歩3分</p>
+                            <p style="margin-bottom: 1rem;">• 羽田空港からリムジンバスで約30分</p>
+                        </div>
+                        
+                        <div>
+                            <h4 style="margin-bottom: 1rem; color: var(--primary-blue);">🚗 お車でお越しの方</h4>
+                            <p style="margin-bottom: 0.5rem;">• 首都高速「霞が関IC」より約5分</p>
+                            <p style="margin-bottom: 0.5rem;">• 東京湾岸道路「有明IC」より約15分</p>
+                            <p>• 専用駐車場8台完備（無料）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/realestate_logo.svg" alt="奥田不動産">
+                        <h3>奥田不動産</h3>
+                    </div>
+                    <p>東京都で30年の実績を誇る総合不動産会社。お客様の理想の住まい探しを全力でサポートいたします。</p>
+                    <p><strong>営業時間:</strong> 9:00-19:00（年中無休）</p>
+                    <p><strong>TEL:</strong> 03-1234-5678</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>サービス</h3>
+                    <a href="index.html#services">賃貸物件仲介</a>
+                    <a href="index.html#services">売買仲介</a>
+                    <a href="index.html#services">投資物件コンサルティング</a>
+                    <a href="index.html#services">物件管理・メンテナンス</a>
+                    <a href="index.html#services">住宅ローン相談</a>
+                    <a href="index.html#services">法務・税務サポート</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>エリア情報</h3>
+                    <a href="#">東京23区</a>
+                    <a href="#">横浜市</a>
+                    <a href="#">川崎市</a>
+                    <a href="#">さいたま市</a>
+                    <a href="#">千葉市</a>
+                    <a href="#">八王子市</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>会社情報</h3>
+                    <a href="about.html">会社概要</a>
+                    <a href="contact.html">お問い合わせ</a>
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">特定商取引法に基づく表記</a>
+                    <a href="#">免許・登録情報</a>
+                    <a href="#">採用情報</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 奥田不動産株式会社. All Rights Reserved. | 東京都知事免許(8)第1234号 | 公益社団法人東京都宅地建物取引業協会会員</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

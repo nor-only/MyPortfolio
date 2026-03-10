@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>診療案内 - 奥田歯科クリニック</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <div class="nav__logo">
+                        <a href="index.html" class="nav__logo-link">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-desktop" style="height: 80px;">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-mobile" style="height: 80px; display: none;">
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">トップ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">当院について</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="medical.html" class="nav__link active">診療案内</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="treatment.html" class="nav__link">治療・検査</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="specialty.html" class="nav__link">専門外来</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="patients.html" class="nav__link">患者さまへ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link">お知らせ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">ブログ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="section-header page-title-header">
+            <h1 class="section-title">診療案内</h1>
+            <p class="section-subtitle">Medical Services</p>
+        </section>
+
+        <!-- Medical Services Section -->
+        <section id="medical" class="medical">
+            <div class="container">
+                <div class="medical__grid" style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: var(--spacing-xl);">
+                    <div class="medical-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <h3>一般歯科</h3>
+                        <p>虫歯治療、歯周病治療、根管治療、予防歯科など</p>
+                        <ul class="medical-card__list">
+                            <li>虫歯治療</li>
+                            <li>歯周病治療</li>
+                            <li>根管治療</li>
+                            <li>歯石除去・クリーニング</li>
+                            <li>フッ素塗布</li>
+                            <li>シーラント</li>
+                            <li>歯の詰め物・被せ物</li>
+                            <li>入れ歯・義歯</li>
+                            <li>抜歯</li>
+                            <li>歯ぎしり・食いしばり</li>
+                            <li>口臭治療</li>
+                            <li>定期検診</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="medical-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <h3>小児歯科</h3>
+                        <p>お子様の虫歯治療、予防処置、歯並び相談など</p>
+                        <ul class="medical-card__list">
+                            <li>小児虫歯治療</li>
+                            <li>乳歯の抜歯</li>
+                            <li>フッ素塗布</li>
+                            <li>シーラント</li>
+                            <li>歯磨き指導</li>
+                            <li>咬合誘導</li>
+                            <li>外傷歯の治療</li>
+                            <li>歯並び相談</li>
+                            <li>口腔習癖の指導</li>
+                            <li>定期検診</li>
+                            <li>歯の生え変わり相談</li>
+                            <li>食育指導</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="medical-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <h3>口腔外科</h3>
+                        <p>親知らず抜歯、顎関節症、口腔内疾患の治療など</p>
+                        <ul class="medical-card__list">
+                            <li>親知らず抜歯</li>
+                            <li>埋伏歯抜歯</li>
+                            <li>顎関節症治療</li>
+                            <li>口内炎治療</li>
+                            <li>粘液嚢胞摘出</li>
+                            <li>歯根嚢胞摘出</li>
+                            <li>外傷歯の治療</li>
+                            <li>口腔粘膜疾患</li>
+                            <li>舌小帯切除</li>
+                            <li>歯肉切除</li>
+                            <li>インプラント</li>
+                            <li>歯牙移植</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Symptoms Section -->
+        <section class="symptoms-section" style="padding: var(--spacing-xxl) 0; background: var(--bg-light);">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: var(--spacing-xxl);">
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 600;">こんな症状はご相談ください</h2>
+                    <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-secondary); margin: 0;">Common Symptoms</p>
+                </div>
+                
+                <div class="symptoms-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl); max-width: 1000px; margin: 0 auto;">
+                    <div class="symptom-card" style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); text-align: center;">
+                        <h4 style="font-size: 1.4rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 600; position: relative;">
+                            <span style="display: inline-block; background: var(--gradient-accent); color: white; padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">歯の症状</span>
+                        </h4>
+                        <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯が痛い</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯がしみる</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯が欠けた</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯がグラグラする</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯に穴があいた</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 詰め物が取れた</li>
+                            <li style="padding: var(--spacing-sm) 0; line-height: 1.6; color: var(--text-secondary);">✓ 歯の色が気になる</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="symptom-card" style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); text-align: center;">
+                        <h4 style="font-size: 1.4rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 600; position: relative;">
+                            <span style="display: inline-block; background: var(--gradient-accent); color: white; padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">歯ぐきの症状</span>
+                        </h4>
+                        <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯ぐきが腫れた</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯ぐきから血が出る</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯ぐきが痛い</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯ぐきが下がった</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯ぐきがかゆい</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 歯と歯ぐきの境目が痛い</li>
+                            <li style="padding: var(--spacing-sm) 0; line-height: 1.6; color: var(--text-secondary);">✓ 歯ぐきの色が気になる</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="symptom-card" style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); text-align: center;">
+                        <h4 style="font-size: 1.4rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 600; position: relative;">
+                            <span style="display: inline-block; background: var(--gradient-accent); color: white; padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md); margin-bottom: var(--spacing-md);">口の中の症状</span>
+                        </h4>
+                        <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 口の中が痛い</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 口が乾く</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 口臭が気になる</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 味がわからない</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 口の中にできものがある</li>
+                            <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">✓ 舌が痛い</li>
+                            <li style="padding: var(--spacing-sm) 0; line-height: 1.6; color: var(--text-secondary);">✓ 顎が痛い・口が開かない</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Age Group Section -->
+        <section class="age-group-section" style="padding: var(--spacing-xxl) 0; background: var(--bg-primary);">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: var(--spacing-xxl);">
+                    <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 600;">年齢別診療</h2>
+                    <p class="section-subtitle" style="font-size: 1.1rem; color: var(--text-secondary); margin: 0;">Age-Specific Care</p>
+                </div>
+                
+                <div class="age-group-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--spacing-xl); max-width: 1100px; margin: 0 auto;">
+                    <div class="age-group-card" style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); text-align: center; transition: var(--transition-smooth); border: 2px solid transparent;">
+                        <div class="age-group-card__icon" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: center; align-items: center; width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; margin: 0 auto var(--spacing-lg);"><img src="images/Baby-Child-Milk-Family.svg" alt="乳幼児・小児" style="width: 50px; height: 50px; filter: brightness(0) invert(1);"></div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 600;">乳幼児・小児</h3>
+                        <p style="margin-bottom: var(--spacing-lg); line-height: 1.7; color: var(--text-secondary); font-size: 1rem;">お子様の特性を理解し、優しく丁寧な歯科診療を心がけています。</p>
+                        <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 乳歯の虫歯治療</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 予防処置（フッ素・シーラント）</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 歯磨き指導</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 歯並び・咬合の相談</li>
+                            <li style="padding: var(--spacing-xs) 0; line-height: 1.6; color: var(--text-secondary);">• 外傷歯の治療</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="age-group-card" style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); text-align: center; transition: var(--transition-smooth); border: 2px solid transparent;">
+                        <div class="age-group-card__icon" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: center; align-items: center; width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; margin: 0 auto var(--spacing-lg);"><img src="images/Mother-Mom-Momen-Family.svg" alt="成人・働き盛り" style="width: 50px; height: 50px; filter: brightness(0) invert(1);"></div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 600;">成人・働き盛り</h3>
+                        <p style="margin-bottom: var(--spacing-lg); line-height: 1.7; color: var(--text-secondary); font-size: 1rem;">忙しい日常生活に配慮し、効率的で効果的な歯科治療をご提供します。</p>
+                        <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 虫歯・歯周病治療</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 審美歯科・ホワイトニング</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• インプラント</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 矯正歯科</li>
+                            <li style="padding: var(--spacing-xs) 0; line-height: 1.6; color: var(--text-secondary);">• 口腔外科</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="age-group-card" style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); text-align: center; transition: var(--transition-smooth); border: 2px solid transparent;">
+                        <div class="age-group-card__icon" style="margin-bottom: var(--spacing-lg); display: flex; justify-content: center; align-items: center; width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; margin: 0 auto var(--spacing-lg);"><img src="images/Grandmother-Grandparent-Old-Family.svg" alt="高齢者" style="width: 50px; height: 50px; filter: brightness(0) invert(1);"></div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 600;">高齢者</h3>
+                        <p style="margin-bottom: var(--spacing-lg); line-height: 1.7; color: var(--text-secondary); font-size: 1rem;">加齢による変化を考慮し、生活の質の向上を目指した歯科治療を行います。</p>
+                        <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 歯周病治療</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 入れ歯・義歯</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 口腔ケア</li>
+                            <li style="padding: var(--spacing-xs) 0; border-bottom: 1px solid var(--border-light); line-height: 1.6; color: var(--text-secondary);">• 根管治療</li>
+                            <li style="padding: var(--spacing-xs) 0; line-height: 1.6; color: var(--text-secondary);">• 訪問歯科診療</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="footer__logo" style="height: 80px; margin-bottom: 20px;">
+                    <div class="footer__contact">
+                        <p>〒100-8111 東京都千代田区千代田1-1</p>
+                        <p>TEL: 03-1234-5678</p>
+                        <p>JR東京駅 徒歩5分</p>
+                    </div>
+                </div>
+                
+                <div class="footer__hours">
+                    <h4>診療時間</h4>
+                    <div class="footer-schedule-table-wrapper">
+                        <table class="footer-schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-label">09:00-12:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot special">▲</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-label">14:00-17:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot closed">/</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 奥田歯科クリニック. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

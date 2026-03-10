@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奥田歯科クリニック - 地域に根ざした歯科医療をお届け</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <div class="nav__logo">
+                        <a href="index.html" class="nav__logo-link">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-desktop" style="height: 60px;">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-mobile" style="height: 60px; display: none;">
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active">トップ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">当院について</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="medical.html" class="nav__link">診療案内</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="treatment.html" class="nav__link">治療・検査</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="specialty.html" class="nav__link">専門外来</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="patients.html" class="nav__link">患者さまへ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link">お知らせ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">ブログ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__background">
+                <div class="hero__shape hero__shape--1"></div>
+                <div class="hero__shape hero__shape--2"></div>
+                <div class="hero__shape hero__shape--3"></div>
+            </div>
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h2 class="hero__title">
+                            <span class="hero__title-line">安心と信頼の</span>
+                            <span class="hero__title-line hero__title-line--accent">歯科医療</span>
+                        </h2>
+                        <p class="hero__description">
+                            地域の皆様のお口の健康を第一に考え、最新の歯科技術と温かい心でお迎えいたします。<br>
+                            歯の痛みやお口のお悩みがございましたら、お気軽にご相談ください。
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="about.html" class="btn btn--hero">
+                                <span>当院について</span>
+                                <i class="btn__icon">→</i>
+                            </a>
+                            <a href="medical.html" class="btn btn--hero-outline">
+                                <span>診療案内</span>
+                                <i class="btn__icon">→</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">当院について</h2>
+                    <p class="section-subtitle">About Our Clinic</p>
+                </div>
+                
+                <div class="about__content">
+                    <div class="about__text">
+                        <h3 class="about__title">患者様の笑顔のために</h3>
+                        <p class="about__description">
+                            奥田歯科クリニックは、地域の皆様に愛され続けて15年。
+                            歯科の専門医として、最新の歯科機器と豊富な経験を活かし、
+                            一人ひとりの患者様に最適な歯科治療をご提供いたします。
+                        </p>
+                        
+                        <div class="about__features" style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: var(--spacing-lg);">
+                            <div class="feature-card" style="flex: 0 1 300px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: var(--spacing-lg); min-height: 350px;">
+                                <div class="feature-card__image" style="margin-bottom: var(--spacing-md);">
+                                    <img src="images/cheerful-dentist-with-arns-crossed-2025-01-29-08-27-18-utc.jpg" alt="専門医による治療">
+                                </div>
+                                <h4 style="margin-bottom: var(--spacing-sm);">専門医による治療</h4>
+                                <p style="flex: 1; display: flex; align-items: center; line-height: 1.6;">日本歯科医師会認定の歯科医師が丁寧に治療いたします</p>
+                            </div>
+                            <div class="feature-card" style="flex: 0 1 300px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: var(--spacing-lg); min-height: 350px;">
+                                <div class="feature-card__image" style="margin-bottom: var(--spacing-md);">
+                                    <img src="images/dental-chair-and-other-accessories-during-modern-d-2024-10-13-21-39-52-utc.jpg" alt="最新の歯科機器">
+                                </div>
+                                <h4 style="margin-bottom: var(--spacing-sm);">最新の歯科機器</h4>
+                                <p style="flex: 1; display: flex; align-items: center; line-height: 1.6;">デジタルレントゲンやCTなど、最新機器で精密な診断を行います</p>
+                            </div>
+                            <div class="feature-card" style="flex: 0 1 300px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: var(--spacing-lg); min-height: 350px;">
+                                <div class="feature-card__image" style="margin-bottom: var(--spacing-md);">
+                                    <img src="images/part-of-modern-interiorwaiting-room-2024-10-17-15-27-06-utc.jpg" alt="温かいおもてなし">
+                                </div>
+                                <h4 style="margin-bottom: var(--spacing-sm);">温かいおもてなし</h4>
+                                <p style="flex: 1; display: flex; align-items: center; line-height: 1.6;">リラックスして受診いただける環境づくりを心がけています</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="schedule-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">診療時間</h2>
+                    <p class="section-subtitle">Consultation Hours</p>
+                </div>
+                
+                <div class="schedule-table-wrapper">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">診療時間</th>
+                                <th>月</th>
+                                <th>火</th>
+                                <th>水</th>
+                                <th>木</th>
+                                <th>金</th>
+                                <th>土</th>
+                                <th>日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="time-label">09:00-12:00</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot special">▲</td>
+                                <td class="time-slot closed">/</td>
+                            </tr>
+                            <tr>
+                                <td class="time-label">14:00-17:00</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot">○</td>
+                                <td class="time-slot closed">/</td>
+                                <td class="time-slot closed">/</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="schedule-info">
+                    <div class="schedule-info__header">
+                        <h3 class="schedule-info__main-title">ご予約・お問い合わせについて</h3>
+                    </div>
+                    
+                    <div class="schedule-info__content-grid">
+                        <div class="schedule-info__primary">
+                            <div class="schedule-info__phone-section">
+                                <div class="schedule-info__icon-large">
+                                    <span>📞</span>
+                                </div>
+                                <div class="schedule-info__phone-content">
+                                    <h4 class="schedule-info__phone-title">初診の方もお気軽にお電話ください</h4>
+                                    <div class="schedule-info__phone-number">03-1234-5678</div>
+                                    <p class="schedule-info__phone-text">お電話でのご予約・お問い合わせをお待ちしております</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="schedule-info__secondary">
+                            <div class="schedule-info__item">
+                                <div class="schedule-info__icon">
+                                    <span>⏰</span>
+                                </div>
+                                <div class="schedule-info__content">
+                                    <h5 class="schedule-info__title">受付は診療終了30分前まで</h5>
+                                    <p class="schedule-info__text">お時間に余裕をもってお越しください</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-info__item">
+                                <div class="schedule-info__icon">
+                                    <span>🚗</span>
+                                </div>
+                                <div class="schedule-info__content">
+                                    <h5 class="schedule-info__title">駐車場完備（8台）</h5>
+                                    <p class="schedule-info__text">お車でのご来院も安心です</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access & Contact Section -->
+        <section class="quick-access-section" style="padding: calc(120px + var(--spacing-xxl)) 0 var(--spacing-xxl); background: var(--bg-secondary);">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--spacing-xl);">
+                    <!-- Contact Section -->
+                    <div style="background: linear-gradient(135deg, var(--gradient-pink), var(--gradient-purple)); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-medium); color: white;">
+                        <h3 style="font-size: 1.4rem; margin-bottom: var(--spacing-lg); color: white; font-weight: 500; border-bottom: 3px solid rgba(255, 255, 255, 0.3); padding-bottom: var(--spacing-sm); display: inline-block;">お問い合わせ</h3>
+                        <div>
+                            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1rem; line-height: 1.6; margin-bottom: var(--spacing-md);">ご不明な点やご質問がございましたらお気軽にお問い合わせください。</p>
+                            <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); padding: var(--spacing-md); border-radius: var(--radius-md); text-align: center; margin-bottom: var(--spacing-md);">
+                                <div style="font-size: 1.6rem; font-weight: 600; color: white; margin-bottom: var(--spacing-xs);">03-1234-5678</div>
+                                <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin: 0;">平日 9:00-18:00 / 土曜 9:00-13:00</p>
+                            </div>
+                            <a href="#" style="display: block; text-align: center; background: rgba(255, 255, 255, 0.9); color: var(--primary-color); padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md); text-decoration: none; font-weight: 500; transition: var(--transition-fast); margin-bottom: var(--spacing-sm);">メールでお問い合わせ</a>
+                            <a href="#" style="display: block; text-align: center; background: rgba(255, 255, 255, 0.1); color: white; padding: var(--spacing-sm) var(--spacing-md); border-radius: var(--radius-md); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 1px solid rgba(255, 255, 255, 0.3);">オンライン予約</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Important Notice Box -->
+                    <div style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); border-left: 4px solid var(--gradient-pink);">
+                        <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; display: flex; align-items: center; gap: var(--spacing-sm);">
+                            <span style="background: var(--gradient-accent); color: white; width: 1.5rem; height: 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 600;">ℹ</span>
+                            重要なお知らせ
+                        </h3>
+                        <div style="background: var(--bg-light); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                            <h4 style="font-size: 1.1rem; margin-bottom: var(--spacing-sm); color: var(--text-primary); font-weight: 500;">年末年始休診のお知らせ</h4>
+                            <p style="font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary); margin-bottom: var(--spacing-sm);">12月29日（金）～1月3日（水）まで休診いたします。</p>
+                            <a href="news.html" style="color: var(--primary-color); text-decoration: none; font-size: 0.9rem; font-weight: 500;">詳細を見る →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Access Menu -->
+                    <div style="background: var(--bg-card); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 style="font-size: 1.3rem; margin-bottom: var(--spacing-lg); color: var(--text-primary); font-weight: 500; border-bottom: 3px solid var(--accent-color); padding-bottom: var(--spacing-sm); display: inline-block;">クイックアクセス</h3>
+                        <div style="display: grid; gap: var(--spacing-sm);">
+                            <a href="tel:03-1234-5678" style="display: flex; align-items: center; gap: var(--spacing-sm); padding: var(--spacing-sm); background: var(--bg-secondary); border-radius: var(--radius-md); text-decoration: none; color: var(--text-primary); transition: var(--transition-fast);">
+                                <span style="background: var(--primary-color); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">📞</span>
+                                <span style="font-size: 0.95rem; font-weight: 500;">電話予約</span>
+                            </a>
+                            <a href="patients.html#map" style="display: flex; align-items: center; gap: var(--spacing-sm); padding: var(--spacing-sm); background: var(--bg-secondary); border-radius: var(--radius-md); text-decoration: none; color: var(--text-primary); transition: var(--transition-fast);">
+                                <span style="background: var(--accent-color); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">🗺</span>
+                                <span style="font-size: 0.95rem; font-weight: 500;">アクセスマップ</span>
+                            </a>
+                            <a href="patients.html#faq" style="display: flex; align-items: center; gap: var(--spacing-sm); padding: var(--spacing-sm); background: var(--bg-secondary); border-radius: var(--radius-md); text-decoration: none; color: var(--text-primary); transition: var(--transition-fast);">
+                                <span style="background: var(--gradient-pink); color: white; width: 2rem; height: 2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;">❓</span>
+                                <span style="font-size: 0.95rem; font-weight: 500;">よくある質問</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="footer__logo" style="height: 60px; margin-bottom: 20px;">
+                    <div class="footer__contact">
+                        <p>〒100-8111 東京都千代田区千代田1-1</p>
+                        <p>TEL: 03-1234-5678</p>
+                        <p>JR東京駅 徒歩5分</p>
+                    </div>
+                </div>
+                
+                <div class="footer__hours">
+                    <h4>診療時間</h4>
+                    <div class="footer-schedule-table-wrapper">
+                        <table class="footer-schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-label">09:00-12:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot special">▲</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-label">14:00-17:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot closed">/</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 奥田歯科クリニック. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

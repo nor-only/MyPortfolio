@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご予約 - 奥田旅館 -奥の細道亭-</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Zen+Kurenaido&family=Hina+Mincho&family=Yuji+Syuku&display=swap" rel="stylesheet">
+</head>
+<body class="reservation-page">
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="logo"><a href="index.html">奥田旅館</a></h1>
+                <span class="logo-sub">okunohosodomichi-tei</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">旅館について</a></li>
+                <li><a href="rooms.html">お部屋</a></li>
+                <li><a href="cuisine.html">お料理</a></li>
+                <li><a href="spa.html">温泉・施設</a></li>
+                <li><a href="plans.html">ご予約プラン</a></li>
+                <li><a href="access.html">アクセス</a></li>
+                <li><a href="reservation.html" class="active">ご予約</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ページヒーロー -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1 class="page-title">ご予約</h1>
+            <p class="page-subtitle">お客様のお越しを心よりお待ちしております</p>
+        </div>
+    </section>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <!-- 予約フォーム -->
+        <section class="reservation-form-section">
+            <div class="container">
+                <h2 class="section-title">宿泊予約フォーム</h2>
+                <div class="form-container">
+                    <form class="reservation-form-main">
+                        <!-- 基本情報 -->
+                        <div class="form-section">
+                            <h3 class="form-section-title elegant-text">宿泊日程・人数</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkin-date">チェックイン日</label>
+                                    <input type="date" id="checkin-date" name="checkin-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkout-date">チェックアウト日</label>
+                                    <input type="date" id="checkout-date" name="checkout-date" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="adults">大人</label>
+                                    <select id="adults" name="adults" required>
+                                        <option value="">選択してください</option>
+                                        <option value="1">1名</option>
+                                        <option value="2">2名</option>
+                                        <option value="3">3名</option>
+                                        <option value="4">4名</option>
+                                        <option value="5">5名</option>
+                                        <option value="6">6名</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="children">小人（小学生）</label>
+                                    <select id="children" name="children">
+                                        <option value="0">0名</option>
+                                        <option value="1">1名</option>
+                                        <option value="2">2名</option>
+                                        <option value="3">3名</option>
+                                        <option value="4">4名</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="infants">幼児（未就学児）</label>
+                                    <select id="infants" name="infants">
+                                        <option value="0">0名</option>
+                                        <option value="1">1名</option>
+                                        <option value="2">2名</option>
+                                        <option value="3">3名</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- プラン・部屋選択 -->
+                        <div class="form-section">
+                            <h3 class="form-section-title elegant-text">プラン・お部屋</h3>
+                            <div class="form-group">
+                                <label for="plan">ご希望プラン</label>
+                                <select id="plan" name="plan" required>
+                                    <option value="">選択してください</option>
+                                    <option value="basic">基本会席プラン</option>
+                                    <option value="premium">極上会席プラン</option>
+                                    <option value="seasonal">季節限定プラン</option>
+                                    <option value="anniversary">記念日お祝いプラン</option>
+                                    <option value="consecutive">のんびり連泊プラン</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="room-type">お部屋タイプ</label>
+                                <select id="room-type" name="room-type" required>
+                                    <option value="">選択してください</option>
+                                    <option value="standard">和室（桜の間・竹の間）</option>
+                                    <option value="hanare">離れ（月見の間・山水の間）</option>
+                                    <option value="special">特別室（風雅の間）</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- お客様情報 -->
+                        <div class="form-section">
+                            <h3 class="form-section-title elegant-text">お客様情報</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="last-name">姓</label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="first-name">名</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="last-name-kana">セイ</label>
+                                    <input type="text" id="last-name-kana" name="last-name-kana" placeholder="フリガナ" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="first-name-kana">メイ</label>
+                                    <input type="text" id="first-name-kana" name="first-name-kana" placeholder="フリガナ" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">メールアドレス</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">電話番号</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">ご住所</label>
+                                <textarea id="address" name="address" rows="3" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- 特別なご要望 -->
+                        <div class="form-section">
+                            <h3 class="form-section-title elegant-text">特別なご要望</h3>
+                            <div class="form-group">
+                                <label for="dietary-restrictions">食事制限・アレルギー</label>
+                                <textarea id="dietary-restrictions" name="dietary-restrictions" rows="3" placeholder="食物アレルギーや食事制限がございましたらお書きください"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="special-requests">その他ご要望</label>
+                                <textarea id="special-requests" name="special-requests" rows="4" placeholder="記念日のお祝い、送迎バスのご利用、その他ご要望がございましたらお書きください"></textarea>
+                            </div>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    お得な情報をメールで受け取る
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- 送信ボタン -->
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary-large">予約を申し込む</button>
+                            <p class="form-note">
+                                ※このフォームは仮予約となります。<br>
+                                内容を確認後、当館よりご連絡いたします。
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 電話予約 -->
+        <section class="phone-reservation">
+            <div class="container">
+                <h2 class="section-title">お電話でのご予約</h2>
+                <div class="phone-content">
+                    <div class="phone-info">
+                        <h3 class="elegant-text">お急ぎの方、ご質問がある方はお電話で</h3>
+                        <p class="phone-number">0120-123-456</p>
+                        <div class="phone-details">
+                            <p><strong>受付時間：</strong>9:00〜18:00（年中無休）</p>
+                            <p><strong>担当：</strong>予約係</p>
+                        </div>
+                        <p class="phone-note">
+                            お電話でのご予約の際は、以下の情報をお聞かせください：<br>
+                            ・ご希望の宿泊日・人数<br>
+                            ・お部屋のご希望<br>
+                            ・お食事のご要望<br>
+                            ・代表者様のお名前・ご連絡先
+                        </p>
+                    </div>
+                    <div class="phone-image">
+                        <img src="images/staff-kimono-reception.png" alt="電話予約">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ご予約に関する注意事項 -->
+        <section class="reservation-notes">
+            <div class="container">
+                <h2 class="section-title">ご予約に関する注意事項</h2>
+                <div class="notes-grid">
+                    <div class="note-item">
+                        <h3 class="elegant-text">ご予約について</h3>
+                        <ul>
+                            <li>ご予約は3ヶ月前から承っております</li>
+                            <li>当日のご予約はお電話にてお願いいたします</li>
+                            <li>満室の場合はご希望に添えない場合がございます</li>
+                            <li>ご予約確定後、確認書をお送りいたします</li>
+                        </ul>
+                    </div>
+                    <div class="note-item">
+                        <h3 class="elegant-text">お支払いについて</h3>
+                        <ul>
+                            <li>現金、クレジットカードがご利用いただけます</li>
+                            <li>ご利用可能カード：VISA、MasterCard、JCB、AMEX</li>
+                            <li>チェックアウト時にお支払いください</li>
+                            <li>領収書の発行も承ります</li>
+                        </ul>
+                    </div>
+                    <div class="note-item">
+                        <h3 class="elegant-text">キャンセルについて</h3>
+                        <ul>
+                            <li>3日前まで：無料</li>
+                            <li>2日前：宿泊料金の30%</li>
+                            <li>前日：宿泊料金の50%</li>
+                            <li>当日・無連絡：宿泊料金の100%</li>
+                        </ul>
+                    </div>
+                    <div class="note-item">
+                        <h3 class="elegant-text">その他</h3>
+                        <ul>
+                            <li>チェックイン：15:00〜18:00</li>
+                            <li>チェックアウト：〜10:00</li>
+                            <li>門限：23:00（事前にご相談ください）</li>
+                            <li>館内は全館禁煙です</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 俳句 -->
+        <section class="haiku-section">
+            <div class="container">
+                <div class="haiku haiku-horizontal">
+                    <p class="brush-text">月見れば 千々にものこそ 悲しけれ</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>奥田旅館</h4>
+                    <p>〒000-0000　○○県○○市○○町1-1</p>
+                    <p>TEL：0120-123-456</p>
+                    <p>Email：info@okuda-ryokan.jp</p>
+                </div>
+                <div class="footer-links">
+                    <p>&copy; 2025 奥田旅館. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

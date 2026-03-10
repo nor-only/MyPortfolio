@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe OKUDA - ギャラリー</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .gallery-item {
+            background-color: var(--color-white);
+            border-radius: 4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-item-content {
+            padding: 15px;
+        }
+        .gallery-item h3 {
+            font-size: 20px;
+            color: var(--color-primary-brown);
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+        .gallery-item p {
+            font-size: 14px;
+            color: var(--color-text-light);
+            font-weight: 300;
+        }
+        .section-subtitle {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            color: var(--color-primary-brown);
+            font-size: 28px;
+            font-weight: 400;
+            position: relative;
+        }
+        .section-subtitle::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: var(--color-accent-gold);
+            margin: 10px auto 0;
+            border-radius: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1><a href="index.html">Cafe OKUDA</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#concept">コンセプト</a></li>
+                    <li><a href="menu.html">メニュー</a></li>
+                    <li><a href="gallery.html">ギャラリー</a></li>
+                    <li><a href="index.html#blog">ブログ</a></li>
+                    <li><a href="index.html#access">アクセス</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <main>
+        <section id="gallery-page" class="section fade-in-section">
+            <div class="container">
+                <h2 class="section-title">ギャラリー<span class="section-subtitle-en">Gallery</span></h2>
+
+                <h3 class="section-subtitle">店内の雰囲気<span class="section-subtitle-en">Atmosphere</span></h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/in_shop/couple-ordering-in-the-cafe-2025-03-13-13-16-10-utc.jpg" alt="カフェで注文するカップル">
+                        <div class="gallery-item-content">
+                            <h3>穏やかなひととき</h3>
+                            <p>温かい光が差し込む店内で、語らいの時間を。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/in_shop/friends-having-a-chat-talking-together-drinking-2025-03-09-08-14-44-utc.jpg" alt="カフェで談笑する友人たち">
+                        <div class="gallery-item-content">
+                            <h3>賑わいの空間</h3>
+                            <p>友人との楽しい会話が弾む、心地よい場所。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/in_shop/glasses-with-black-coffee-and-filtered-water-2024-12-02-20-11-51-utc.jpg" alt="コーヒーと水">
+                        <div class="gallery-item-content">
+                            <h3>静寂のカウンター</h3>
+                            <p>一杯のコーヒーと向き合う、落ち着いた時間。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/in_shop/barista-gives-takeaway-coffee-in-paper-cups-to-cus-2025-01-31-22-50-43-utc.jpg" alt="テイクアウトコーヒー">
+                        <div class="gallery-item-content">
+                            <h3>お持ち帰りもどうぞ</h3>
+                            <p>忙しい日常に、OKUDA Coffeeの味を。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/in_shop/barista-preparing-filter-coffee-cheerful-barista-2025-03-25-14-27-31-utc.jpg" alt="フィルターコーヒー準備">
+                        <div class="gallery-item-content">
+                            <h3>丁寧な一杯</h3>
+                            <p>バリスタが心を込めて淹れる、こだわりのコーヒー。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/in_shop/female-barista-making-coffee-in-coffee-shop-counte-2025-03-07-14-41-07-utc.jpg" alt="女性バリスタ">
+                        <div class="gallery-item-content">
+                            <h3>笑顔でおもてなし</h3>
+                            <p>お客様をお迎えする、温かい笑顔。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">バリスタの技<span class="section-subtitle-en">Barista Skills</span></h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/barista/male-barista-pours-boiling-water-into-the-coffee-g-2025-03-26-18-03-54-utc.jpg" alt="コーヒーを淹れるバリスタ">
+                        <div class="gallery-item-content">
+                            <h3>熟練の抽出</h3>
+                            <p>一杯に情熱を注ぐ、バリスタの真剣な眼差し。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/barista/handsome-barista-man-during-work-in-his-street-cof-2024-10-16-07-20-15-utc.jpg" alt="男性バリスタ">
+                        <div class="gallery-item-content">
+                            <h3>ストリートカフェの風景</h3>
+                            <p>街角で出会う、本格的なコーヒー体験。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/barista/professional-female-barista-smiling-portrait-of-y-2025-04-02-08-50-15-utc.jpg" alt="女性バリスタのポートレート">
+                        <div class="gallery-item-content">
+                            <h3>プロの笑顔</h3>
+                            <p>お客様を魅了する、バリスタのプロフェッショナルな笑顔。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">珈焲<span class="section-subtitle-en">Coffee</span></h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/coffee/blend coffee.jpg" alt="ブレンドコーヒー">
+                        <div class="gallery-item-content">
+                            <h3>こだわりのブレンド</h3>
+                            <p>OKUDA Coffeeが誇る、独自のブレンドコーヒー。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/coffee/coffee-2025-01-10-18-31-24-utc.jpg" alt="コーヒー豆">
+                        <div class="gallery-item-content">
+                            <h3>厳選された豆</h3>
+                            <p>世界中から集めた、高品質なコーヒー豆。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/coffee/dalgona-coffee-2025-03-07-16-01-08-utc.jpg" alt="ダルゴナコーヒー">
+                        <div class="gallery-item-content">
+                            <h3>新感覚の味わい</h3>
+                            <p>ふわふわの泡が楽しい、ダルゴナコーヒー。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/coffee/dalgona-coffee-drink-with-coffee-foam-and-milk-2025-01-09-07-03-59-utc.jpg" alt="ダルゴナコーヒー">
+                        <div class="gallery-item-content">
+                            <h3>ミルクとコーヒーの調和</h3>
+                            <p>見た目も美しい、クリーミーな一杯。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/coffee/espresso-cup-of-hot-coffee-2025-01-09-03-31-34-utc.jpg" alt="エスプレッソ">
+                        <div class="gallery-item-content">
+                            <h3>至高のエスプレッソ</h3>
+                            <p>濃厚な香りとコクが凝縮された、本物の一杯。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/coffee/fresh-tasty-espresso-2025-01-09-12-12-49-utc.jpg" alt="フレッシュエスプレッソ">
+                        <div class="gallery-item-content">
+                            <h3>挽きたての香り</h3>
+                            <p>淹れたてのエスプレッソが織りなす、豊かなアロマ。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/coffee/iced-coffee-or-caffe-latte-in-tall-glass-2025-05-18-05-43-33-utc.jpg" alt="アイスカフェラテ">
+                        <div class="gallery-item-content">
+                            <h3>涼やかな一杯</h3>
+                            <p>暑い日にぴったりの、爽やかなアイスカフェラテ。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">紅茶・その他ドリンク<span class="section-subtitle-en">Tea & Other Drinks</span></h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/tea_drinks/a-cup-of-spiced-cocoa-on-a-lace-tablecloth-alongsi-2025-01-10-03-09-15-utc.jpg" alt="スパイスココア">
+                        <div class="gallery-item-content">
+                            <h3>心温まるココア</h3>
+                            <p>スパイスが香る、特別なココア。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tea_drinks/a-glass-teapot-with-tea-on-a-wooden-board-2025-02-10-05-19-29-utc.jpg" alt="ガラスティーポット">
+                        <div class="gallery-item-content">
+                            <h3>優雅なティータイム</h3>
+                            <p>美しいティーポットで淹れる、至福の紅茶。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tea_drinks/food-still-life-in-a-dark-key-glass-mug-with-oran-2025-01-07-05-56-21-utc.jpg" alt="オレンジジュース">
+                        <div class="gallery-item-content">
+                            <h3>フレッシュな一杯</h3>
+                            <p>ビタミンCたっぷりの、搾りたてオレンジジュース。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tea_drinks/glass-of-apple-juice-2025-01-09-03-04-23-utc.jpg" alt="アップルジュース">
+                        <div class="gallery-item-content">
+                            <h3>自然の恵み</h3>
+                            <p>りんご本来の甘さを楽しめる、優しい味わい。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tea_drinks/glass-of-orange-juice-on-a-beach-table-2025-02-10-07-58-48-utc.jpg" alt="ビーチのオレンジジュース">
+                        <div class="gallery-item-content">
+                            <h3>リゾート気分</h3>
+                            <p>開放的な気分になれる、特別なオレンジジュース。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tea_drinks/milk-tea-with-brown-sugar-2025-03-08-14-33-08-utc.JPG" alt="黒糖ミルクティー">
+                        <div class="gallery-item-content">
+                            <h3>優しい甘さ</h3>
+                            <p>黒糖のコクとミルクのハーモニー。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/tea_drinks/taiwan-milk-tea-with-bubble-on-wood-background-2024-10-16-09-44-37-utc.jpeg" alt="台湾ミルクティー">
+                        <div class="gallery-item-content">
+                            <h3>本場の味わい</h3>
+                            <p>もちもちのタピオカが楽しい、台湾ミルクティー。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-subtitle">ランチ・甘味<span class="section-subtitle-en">Lunch & Sweets</span></h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/sweets/belgium-waffles-with-raspberries-chocolate-and-sy-2025-02-20-23-29-28-utc.jpg" alt="ベルギーワッフル">
+                        <div class="gallery-item-content">
+                            <h3>サクサクワッフル</h3>
+                            <p>焼きたての香りが食欲をそそる、ベルギーワッフル。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/light meal/blt-sandwich-on-the-wooden-board-2025-03-05-05-13-14-utc.jpg" alt="BLTサンドイッチ">
+                        <div class="gallery-item-content">
+                            <h3>定番BLTサンド</h3>
+                            <p>新鮮な野菜とカリカリベーコンの絶妙な組み合わせ。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sweets/cheesecake-with-strawberry-and-mint-2024-10-18-01-40-27-utc.jpg" alt="ストロベリーチーズケーキ">
+                        <div class="gallery-item-content">
+                            <h3>甘酸っぱい誘惑</h3>
+                            <p>濃厚なチーズとイチゴのハーモニー。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sweets/chocolate-cake-concept-of-delicious-and-tasty-de-2025-06-05-21-59-41-utc.jpg" alt="チョコレートケーキ">
+                        <div class="gallery-item-content">
+                            <h3>至福のチョコレート</h3>
+                            <p>しっとりとした食感と、カカオの深い味わい。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/lunch/closeup-of-rice-and-meat-in-a-black-bowl-on-a-tabl-2025-02-01-14-58-04-utc.jpeg" alt="ライスボウル">
+                        <div class="gallery-item-content">
+                            <h3>特製ライスボウル</h3>
+                            <p>彩り豊かで栄養満点、ランチに最適。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sweets/delicious-and-sweet-dessert-panna-cotta-composi-2025-03-24-18-06-09-utc.jpg" alt="パンナコッタ">
+                        <div class="gallery-item-content">
+                            <h3>なめらかパンナコッタ</h3>
+                            <p>とろけるような口どけの、上品なデザート。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/light meal/grilled-club-sandwich-panini-with-ham-tomato-che-2025-02-20-23-26-52-utc.jpg" alt="グリルパニーニ">
+                        <div class="gallery-item-content">
+                            <h3>熱々グリルパニーニ</h3>
+                            <p>とろけるチーズと具材がたまらない。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/lunch/japanese-chicken-katsu-curry-stew-2025-01-16-16-16-33-utc.jpg" alt="カツカレー">
+                        <div class="gallery-item-content">
+                            <h3>本格カツカレー</h3>
+                            <p>サクサクのカツとスパイシーなカレーの組み合わせ。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/lunch/pasta-carbonara-with-bacon-egg-and-cheese-2025-02-22-15-44-16-utc.jpg" alt="カルボナーラ">
+                        <div class="gallery-item-content">
+                            <h3>濃厚カルボナーラ</h3>
+                            <p>クリーミーなソースが絡む、人気のパスタ。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/lunch/pasta-spaghetti-bolognese-with-minced-beef-sauce-2025-03-26-08-17-40-utc.jpg" alt="ボロネーゼ">
+                        <div class="gallery-item-content">
+                            <h3>自家製ボロネーゼ</h3>
+                            <p>じっくり煮込んだミートソースが自慢の一品。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/lunch/pasta-spaghetti-with-tomato-sauce-2024-10-23-00-25-40-utc.jpg" alt="トマトパスタ">
+                        <div class="gallery-item-content">
+                            <h3>フレッシュトマトパスタ</h3>
+                            <p>トマトの酸味と甘みが広がる、さっぱりとしたパスタ。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sweets/piece-of-caramel-souffle-cake-with-berries-2025-02-25-15-12-48-utc.jpg" alt="キャラメルスフレケーキ">
+                        <div class="gallery-item-content">
+                            <h3>ふわふわスフレ</h3>
+                            <p>キャラメルの香ばしさがたまらない、軽い食感のケーキ。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sweets/pizza-with-pumpkin-sausage-bacon-and-honey-mushr-2025-01-07-07-05-54-utc.jpg" alt="特製ピザ">
+                        <div class="gallery-item-content">
+                            <h3>シェフ特製ピザ</h3>
+                            <p>旬の食材をふんだんに使った、彩り豊かなピザ。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/lunch/ramadan-food-2025-02-10-12-35-50-utc.jpg" alt="ラマダンフード">
+                        <div class="gallery-item-content">
+                            <h3>異国の味覚</h3>
+                            <p>特別な日に味わう、エキゾチックなラマダン料理。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sweets/set-of-ice-cream-2024-12-07-18-11-33-utc.jpg" alt="アイスクリームセット">
+                        <div class="gallery-item-content">
+                            <h3>選べるアイス</h3>
+                            <p>食後のデザートにぴったりの、冷たいアイスクリーム。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sweets/vanilla-and-pink-ice-cream-in-a-pial-with-frozen-b-2025-01-08-22-29-45-utc.jpg" alt="バニラピンクアイス">
+                        <div class="gallery-item-content">
+                            <h3>ベリーとバニラ</h3>
+                            <p>甘酸っぱいベリーとバニラの組み合わせが絶妙。</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/sweets/vanilla-panna-cotta-2025-01-09-02-51-01-utc.jpg" alt="バニラパンナコッタ">
+                        <div class="gallery-item-content">
+                            <h3>シンプルイズベスト</h3>
+                            <p>バニラの香りが引き立つ、なめらかなパンナコッタ。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cafe OKUDA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>治療・検査 - 奥田歯科クリニック</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <div class="nav__logo">
+                        <a href="index.html" class="nav__logo-link">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-desktop" style="height: 80px;">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-mobile" style="height: 80px; display: none;">
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">トップ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">当院について</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="medical.html" class="nav__link">診療案内</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="treatment.html" class="nav__link active">治療・検査</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="specialty.html" class="nav__link">専門外来</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="patients.html" class="nav__link">患者さまへ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link">お知らせ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">ブログ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="section-header page-title-header">
+            <h1 class="section-title">治療・検査</h1>
+            <p class="section-subtitle">Treatment & Examination</p>
+        </section>
+
+        <!-- Treatment Section -->
+        <section id="treatment" class="treatment">
+            <div class="container">
+                <div class="treatment__content">
+                    <div class="treatment__tabs">
+                        <button class="treatment__tab active" data-tab="examination">検査について</button>
+                        <button class="treatment__tab" data-tab="treatment-methods">治療方法</button>
+                        <button class="treatment__tab" data-tab="equipment">医療機器</button>
+                    </div>
+                    
+                    <div class="treatment__panels">
+                        <!-- Examination Panel -->
+                        <div class="treatment__panel active" id="examination">
+                            <div class="treatment__panel-content">
+                                <h3>精密検査で正確な診断</h3>
+                                <p>当院では、最新の歯科検査機器を用いて正確な診断を行います。</p>
+                                <div class="examination-grid">
+                                    <div class="examination-item">
+                                        <h4>歯科レントゲン検査</h4>
+                                        <p>デジタルレントゲン、CT撮影など</p>
+                                        <ul>
+                                            <li>デジタルレントゲン</li>
+                                            <li>パノラマレントゲン</li>
+                                            <li>歯科用CT撮影</li>
+                                            <li>口腔内写真撮影</li>
+                                        </ul>
+                                    </div>
+                                    <div class="examination-item">
+                                        <h4>口腔内検査</h4>
+                                        <p>虫歯・歯周病の詳細な診断</p>
+                                        <ul>
+                                            <li>口腔内視診</li>
+                                            <li>歯周ポケット測定</li>
+                                            <li>動揺度検査</li>
+                                            <li>プラーク付着検査</li>
+                                        </ul>
+                                    </div>
+                                    <div class="examination-item">
+                                        <h4>精密画像診断</h4>
+                                        <p>CTスキャンによる3D画像診断</p>
+                                        <ul>
+                                            <li>歯科用CT撮影</li>
+                                            <li>3D画像解析</li>
+                                            <li>インプラント術前診断</li>
+                                            <li>顎関節撮影</li>
+                                        </ul>
+                                    </div>
+                                    <div class="examination-item">
+                                        <h4>咬合検査</h4>
+                                        <p>かみ合わせの詳細な分析</p>
+                                        <ul>
+                                            <li>咬合印象採得</li>
+                                            <li>顎運動記録</li>
+                                            <li>咬合力測定</li>
+                                            <li>模型分析</li>
+                                        </ul>
+                                    </div>
+                                    <div class="examination-item">
+                                        <h4>歯周病検査</h4>
+                                        <p>歯周組織の健康状態を評価</p>
+                                        <ul>
+                                            <li>プロービング検査</li>
+                                            <li>歯肉出血指数</li>
+                                            <li>プラーク指数</li>
+                                            <li>歯槽骨レベル測定</li>
+                                        </ul>
+                                    </div>
+                                    <div class="examination-item">
+                                        <h4>審美診断</h4>
+                                        <p>美しい歯並びと色調の評価</p>
+                                        <ul>
+                                            <li>歯の色調測定</li>
+                                            <li>歯並び分析</li>
+                                            <li>顔貌との調和評価</li>
+                                            <li>スマイルライン分析</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Treatment Methods Panel -->
+                        <div class="treatment__panel" id="treatment-methods">
+                            <div class="treatment__panel-content">
+                                <h3>個別最適化された治療</h3>
+                                <p>患者様の症状に合わせた最適な治療法をご提案します。</p>
+                                <div class="treatment-methods-grid">
+                                    <div class="treatment-method">
+                                        <h4>保存療法</h4>
+                                        <p>歯を残すための治療</p>
+                                        <ul>
+                                            <li>虫歯治療（詰め物・被せ物）</li>
+                                            <li>根管治療</li>
+                                            <li>知覚過敏治療</li>
+                                            <li>歯髄保護治療</li>
+                                        </ul>
+                                    </div>
+                                    <div class="treatment-method">
+                                        <h4>歯周治療</h4>
+                                        <p>歯ぐきの健康を回復</p>
+                                        <ul>
+                                            <li>スケーリング（歯石除去）</li>
+                                            <li>ルートプレーニング</li>
+                                            <li>歯周外科手術</li>
+                                            <li>歯周再生療法</li>
+                                        </ul>
+                                    </div>
+                                    <div class="treatment-method">
+                                        <h4>補綴治療</h4>
+                                        <p>失った歯の機能回復</p>
+                                        <ul>
+                                            <li>インプラント治療</li>
+                                            <li>ブリッジ治療</li>
+                                            <li>入れ歯（義歯）</li>
+                                            <li>クラウン・インレー</li>
+                                        </ul>
+                                    </div>
+                                    <div class="treatment-method">
+                                        <h4>矯正治療</h4>
+                                        <p>美しい歯並びへの改善</p>
+                                        <ul>
+                                            <li>ワイヤー矯正</li>
+                                            <li>マウスピース矯正</li>
+                                            <li>小児矯正</li>
+                                            <li>部分矯正</li>
+                                        </ul>
+                                    </div>
+                                    <div class="treatment-method">
+                                        <h4>審美治療</h4>
+                                        <p>美しい歯への改善</p>
+                                        <ul>
+                                            <li>ホワイトニング</li>
+                                            <li>セラミック治療</li>
+                                            <li>ラミネートベニア</li>
+                                            <li>歯肉整形</li>
+                                        </ul>
+                                    </div>
+                                    <div class="treatment-method">
+                                        <h4>口腔外科</h4>
+                                        <p>外科的な歯科治療</p>
+                                        <ul>
+                                            <li>親知らず抜歯</li>
+                                            <li>顎関節症治療</li>
+                                            <li>口腔内腫瘍摘出</li>
+                                            <li>歯牙移植</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Equipment Panel -->
+                        <div class="treatment__panel" id="equipment">
+                            <div class="treatment__panel-content">
+                                <h3>最新の歯科機器</h3>
+                                <p>先進的な機器による精密な診断と治療を行います。</p>
+                                <div class="equipment-grid">
+                                    <div class="equipment-item">
+                                        <h4>歯科用CT</h4>
+                                        <p>3次元画像による精密診断</p>
+                                        <ul>
+                                            <li>3D画像診断</li>
+                                            <li>インプラント術前診断</li>
+                                            <li>顎関節撮影</li>
+                                            <li>低被ばく設計</li>
+                                        </ul>
+                                    </div>
+                                    <div class="equipment-item">
+                                        <h4>デジタルレントゲン</h4>
+                                        <p>高画質・低被ばくの撮影システム</p>
+                                        <ul>
+                                            <li>デジタルパノラマ</li>
+                                            <li>デンタル撮影</li>
+                                            <li>即座に画像確認</li>
+                                            <li>従来の1/4の被ばく量</li>
+                                        </ul>
+                                    </div>
+                                    <div class="equipment-item">
+                                        <h4>口腔内スキャナー</h4>
+                                        <p>精密な3Dデジタル印象</p>
+                                        <ul>
+                                            <li>非接触デジタル印象</li>
+                                            <li>高精度3Dモデル</li>
+                                            <li>患者負担軽減</li>
+                                            <li>治療計画シミュレーション</li>
+                                        </ul>
+                                    </div>
+                                    <div class="equipment-item">
+                                        <h4>Er:YAGレーザー</h4>
+                                        <p>痛みの少ない治療が可能</p>
+                                        <ul>
+                                            <li>虫歯除去</li>
+                                            <li>歯周病治療</li>
+                                            <li>歯肉切開</li>
+                                            <li>麻酔なしでの治療可能</li>
+                                        </ul>
+                                    </div>
+                                    <div class="equipment-item">
+                                        <h4>超音波スケーラー</h4>
+                                        <p>効率的な歯石除去</p>
+                                        <ul>
+                                            <li>超音波振動</li>
+                                            <li>痛みの軽減</li>
+                                            <li>短時間での処置</li>
+                                            <li>歯面へのダメージ最小化</li>
+                                        </ul>
+                                    </div>
+                                    <div class="equipment-item">
+                                        <h4>マイクロスコープ</h4>
+                                        <p>精密治療のための高倍率観察</p>
+                                        <ul>
+                                            <li>最大20倍の拡大</li>
+                                            <li>根管治療の精度向上</li>
+                                            <li>低侵襲治療</li>
+                                            <li>治療記録・説明に活用</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="footer__logo" style="height: 80px; margin-bottom: 20px;">
+                    <div class="footer__contact">
+                        <p>〒100-8111 東京都千代田区千代田1-1</p>
+                        <p>TEL: 03-1234-5678</p>
+                        <p>JR東京駅 徒歩5分</p>
+                    </div>
+                </div>
+                
+                <div class="footer__hours">
+                    <h4>診療時間</h4>
+                    <div class="footer-schedule-table-wrapper">
+                        <table class="footer-schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-label">09:00-12:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot special">▲</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-label">14:00-17:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot closed">/</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 奥田歯科クリニック. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

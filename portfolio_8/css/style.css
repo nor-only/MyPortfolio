@@ -1,0 +1,766 @@
+/* 基本設定 */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; /* クリーム色に近い背景 */
+    color: #333;
+    scroll-behavior: smooth; /* スムーススクロール */
+}
+
+/* 段階的フォントサイズ調整システム */
+:root {
+    --font-scale-base: 1;
+    --header-font: clamp(20px, 4vw, 24px);
+    --nav-font: clamp(12px, 2.5vw, 14px);
+    --body-font: clamp(14px, 2.5vw, 16px);
+    --button-font: clamp(12px, 2.2vw, 14px);
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(10, 25, 47, 0.8); /* ダークネイビー、半透明 */
+    color: #fff;
+    position: fixed;
+    width: calc(100% - 100px);
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: var(--header-font);
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--nav-font);
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #c4a35a; /* ゴールド */
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1001;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 2px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+    background-color: #c4a35a;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+    background-color: #c4a35a;
+}
+
+/* フェードインアニメーション */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.language-switcher a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.language-switcher .lang-active {
+    font-weight: 700;
+    color: #c4a35a;
+}
+
+.cta-button {
+    background-color: #c4a35a; /* ゴールド */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #a98c4f;
+}
+
+/* ヒーローセクション */
+#hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+#hero .hero-text {
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#hero .hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.video-tour-button {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.video-tour-button:hover {
+    background-color: #fff;
+    color: #0a192f;
+}
+
+/* ギャラリー */
+#gallery {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* コンセプト・客室・アクセス共通 */
+#concept, #rooms, #services, #reviews, #access {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+#concept h2, #rooms h2, #services h2, #reviews h2, #access h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #0a192f; /* ダークネイビー */
+}
+
+#concept p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* 客室カード */
+.room-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #c4a35a; /* ゴールド */
+    margin-top: 20px;
+}
+
+.card p {
+    padding: 0 20px 20px;
+}
+
+/* サービスカード */
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 45%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #c4a35a; /* ゴールド */
+    margin-top: 20px;
+}
+
+/* レビューカード */
+.review-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: #0a192f;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 40%;
+    font-style: italic;
+}
+
+.review-card span {
+    display: block;
+    margin-top: 15px;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* アクセス */
+.map-container {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* フッター */
+footer {
+    background-color: #0a192f; /* ダークネイビー */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #c4a35a;
+}
+
+/* ========== 新規ページ用CSS ========== */
+
+/* ページヒーロー */
+.page-hero {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.page-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+/* 客室詳細リスト */
+#rooms-list, #access-detail {
+    padding: 80px 50px;
+}
+
+.room-detail-card {
+    display: flex;
+    gap: 40px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.room-detail-card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.room-detail-text {
+    padding: 40px;
+    text-align: left;
+}
+
+/* サービス詳細 */
+#restaurant-detail, #spa-detail {
+    padding: 80px 50px;
+}
+
+.service-detail-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.service-detail-flex.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-detail-img {
+    flex: 1;
+}
+
+.service-detail-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-detail-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* アクセス詳細 */
+.access-info {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.map-container-large {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    height: 600px;
+}
+
+/* ========== 機能追加 ========== */
+
+/* 予約モーダル */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 40px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    animation: slide-down 0.5s ease-out;
+}
+
+@keyframes slide-down {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+}
+
+/* ページトップへ戻るボタン */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #c4a35a;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* フェードインアニメーション */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
+    
+    /* ハンバーガーメニュー表示 */
+    .hamburger {
+        display: flex;
+    }
+    
+    /* ナビゲーションメニューをモバイル用に調整 */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: rgba(10, 25, 47, 0.95);
+        backdrop-filter: blur(20px);
+        transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        z-index: 1000;
+        padding-top: 80px;
+        border-left: 1px solid rgba(196, 163, 90, 0.3);
+    }
+    
+    .nav-menu.active {
+        right: 0;
+        box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 0;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all 0.3s ease;
+    }
+    
+    .nav-menu.active li {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .nav-menu.active li:nth-child(1) { transition-delay: 0.1s; }
+    .nav-menu.active li:nth-child(2) { transition-delay: 0.15s; }
+    .nav-menu.active li:nth-child(3) { transition-delay: 0.2s; }
+    .nav-menu.active li:nth-child(4) { transition-delay: 0.25s; }
+    
+    .nav-menu a {
+        display: block;
+        padding: 15px 30px;
+        font-size: var(--nav-font);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .nav-menu a:hover {
+        background: rgba(196, 163, 90, 0.1);
+        padding-left: 40px;
+    }
+    
+    #concept,
+    #rooms,
+    #services,
+    #reviews,
+    #access,
+    #rooms-list,
+    #access-detail,
+    #restaurant-detail,
+    #spa-detail {
+        padding: 4rem 2rem;
+    }
+    
+    h1 {
+        font-size: clamp(2rem, 6vw, 2.5rem);
+    }
+    
+    h2 {
+        font-size: clamp(1.8rem, 5vw, 2.2rem);
+    }
+    
+    p {
+        font-size: var(--body-font);
+    }
+    
+    header {
+        padding: 15px 2rem;
+        width: calc(100% - 4rem);
+    }
+    
+    .header-right {
+        gap: 15px;
+    }
+    
+    .cta-button {
+        font-size: var(--button-font);
+        padding: 8px 16px;
+    }
+    
+    #hero .hero-text h1 {
+        font-size: clamp(2rem, 6vw, 2.5rem);
+    }
+    
+    .room-cards,
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 450px;
+    }
+    
+    .review-cards {
+        flex-direction: column;
+    }
+    
+    .review-card {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .room-detail-card {
+        flex-direction: column;
+    }
+    
+    .room-detail-card img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .service-detail-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .service-detail-flex.reverse {
+        flex-direction: column;
+    }
+    
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 12px 20px;
+        text-align: center;
+    }
+    
+    .video-tour-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 12px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    #concept,
+    #rooms,
+    #services,
+    #reviews,
+    #access,
+    #rooms-list,
+    #access-detail,
+    #restaurant-detail,
+    #spa-detail {
+        padding: 3rem 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 0.9rem;
+    }
+    
+    header {
+        padding: 15px 1rem;
+        width: calc(100% - 2rem);
+    }
+    
+    header .logo {
+        font-size: 18px;
+    }
+    
+    #hero .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        padding: 1rem;
+    }
+    
+    .cta-button,
+    .video-tour-button {
+        width: 100%;
+        max-width: none;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+}
+

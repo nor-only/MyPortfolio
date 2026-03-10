@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKUDA Coffee - お問い合わせ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: var(--color-white);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .contact-form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--color-text-dark);
+        }
+        .contact-form-container input[type="text"],
+        .contact-form-container input[type="email"],
+        .contact-form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid var(--color-dark-gray);
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: 'Georgia', serif;
+        }
+        .contact-form-container textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .contact-form-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--color-primary-brown);
+            color: var(--color-white);
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form-container button:hover {
+            background-color: var(--color-primary-brown-dark);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1><a href="index.html">Cafe OKUDA</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#concept">コンセプト</a></li>
+                    <li><a href="menu.html">メニュー</a></li>
+                    <li><a href="gallery.html">ギャラリー</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="index.html#access">アクセス</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <main>
+        <section id="contact-page" class="section fade-in-section">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ<span class="section-subtitle-en">Contact</span></h2>
+                <div class="contact-form-container">
+                    <p style="text-align: center; margin-bottom: 30px; font-size: 16px;">ご不明な点やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。</p>
+                    <form action="#" method="POST">
+                        <label for="name">お名前:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">メールアドレス:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="subject">件名:</label>
+                        <input type="text" id="subject" name="subject">
+
+                        <label for="message">お問い合わせ内容:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">送信</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cafe OKUDA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

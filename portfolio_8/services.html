@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ja="レストラン & スパ - Hotel OKUDA" data-en="Restaurant & Spa - Hotel OKUDA">レストラン & スパ - Hotel OKUDA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: #fff; text-decoration: none;">Hotel OKUDA</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#concept" data-ja="コンセプト" data-en="Concept">コンセプト</a></li>
+                <li><a href="rooms.html" data-ja="客室" data-en="Rooms">客室</a></li>
+                <li><a href="services.html" data-ja="レストラン/スパ" data-en="Restaurant/Spa">レストラン/スパ</a></li>
+                <li><a href="access.html" data-ja="アクセス" data-en="Access">アクセス</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="language-switcher">
+                <a href="#" class="lang-btn" data-lang-switch="ja">JP</a> / <a href="#" class="lang-btn" data-lang-switch="en">EN</a>
+            </div>
+            <a href="#" class="cta-button reservation-btn" data-ja="ご予約" data-en="Reserve">ご予約</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero fade-in" style="background-image: url('images/table-setting-at-restaurant-2025-01-15-15-22-58-utc.jpg');">
+            <h1 data-ja="レストラン & スパ" data-en="Restaurant & Spa">レストラン & スパ</h1>
+        </section>
+
+        <section id="restaurant-detail" class="fade-in">
+            <h2 data-ja="L'étoile - ミシュランスターレストラン" data-en="L'étoile - Michelin Star Restaurant">L'étoile - ミシュランスターレストラン</h2>
+            <div class="service-detail-flex">
+                <div class="service-detail-img">
+                    <img src="images/professional-waiter-preparing-the-table-in-the-vin-2025-03-18-21-53-23-utc.jpg" alt="L'étoile Restaurant">
+                </div>
+                <div class="service-detail-text">
+                    <p data-ja="最上階からの夜景と共に、革新的なフレンチを。シェフの創造性あふれる料理は、厳選された旬の食材から生み出されます。特別な記念日に、忘れられない食体験をお約束します。" data-en="Innovative French cuisine with a view of the city from the top floor. The chef's creative dishes are made from carefully selected seasonal ingredients. We promise an unforgettable dining experience for your special anniversary.">最上階からの夜景と共に、革新的なフレンチを。シェフの創造性あふれる料理は、厳選された旬の食材から生み出されます。特別な記念日に、忘れられない食体験をお約束します。</p>
+                    <p><strong data-ja="営業時間:" data-en="Hours:">営業時間:</strong> 18:00 - 22:00</p>
+                    <p><strong data-ja="ドレスコード:" data-en="Dress Code:">ドレスコード:</strong> スマートカジュアル</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="spa-detail" class="fade-in">
+            <h2 data-ja="Ciel Spa - 天空のスパ" data-en="Ciel Spa - Sky Spa">Ciel Spa - 天空のスパ</h2>
+            <div class="service-detail-flex reverse">
+                 <div class="service-detail-img">
+                    <img src="images/luxurious-spa-salon-2025-03-13-10-24-19-utc.JPG" alt="Ciel Spa">
+                </div>
+                <div class="service-detail-text">
+                    <p data-ja="都心を一望する絶景の中で、心と体を解放する癒やしの空間。自然由来のプロダクトを使用したトリートメントで、深いリラクゼーションへと誘います。" data-en="A healing space to release your mind and body in a spectacular view overlooking the city center. Treatments using products derived from nature invite you to deep relaxation.">都心を一望する絶景の中で、心と体を解放する癒やしの空間。自然由来のプロダクトを使用したトリートメントで、深いリラクゼーションへと誘います。</p>
+                    <p><strong data-ja="営業時間:" data-en="Hours:">営業時間:</strong> 10:00 - 21:00</p>
+                    <p><strong data-ja="メニュー:" data-en="Menu:">メニュー:</strong> ボディトリートメント, フェイシャル, etc.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Hotel OKUDA. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 予約モーダル -->
+    <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-ja="ご予約" data-en="Reservation">ご予約</h2>
+            <form>
+                <label for="checkin" data-ja="チェックイン" data-en="Check-in">チェックイン:</label>
+                <input type="date" id="checkin" name="checkin">
+                <label for="checkout" data-ja="チェックアウト" data-en="Check-out">チェックアウト:</label>
+                <input type="date" id="checkout" name="checkout">
+                <label for="guests" data-ja="人数" data-en="Number of Guests">人数:</label>
+                <input type="number" id="guests" name="guests" min="1" value="1">
+                <button type="submit" class="cta-button" data-ja="予約する" data-en="Book Now">予約する</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ページトップへ戻るボタン -->
+    <a href="#" id="back-to-top" class="back-to-top-btn">&uarr;</a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

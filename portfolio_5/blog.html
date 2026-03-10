@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe OKUDA - ブログ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .blog-post-item {
+            background-color: var(--color-white);
+            border-radius: 4px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+        }
+        .blog-post-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+        }
+        .blog-post-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .blog-post-item:hover .blog-post-image {
+            transform: scale(1.08);
+        }
+        .blog-post-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 0%, rgba(184, 134, 11, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .blog-post-item:hover::before {
+            opacity: 1;
+        }
+        .blog-post-content {
+            padding: 15px;
+            position: relative;
+            z-index: 2;
+        }
+        .blog-post-item h3 {
+            font-size: 20px;
+            color: var(--color-primary-brown);
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+        .blog-post-item h3 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .blog-post-item h3 a:hover {
+            color: var(--color-accent-gold);
+        }
+        .blog-post-meta {
+            font-size: 13px;
+            color: var(--color-text-light);
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        .blog-post-item p {
+            font-size: 14px;
+            color: var(--color-text-dark);
+            font-weight: 300;
+        }
+        .blog-post-hidden {
+            display: none;
+        }
+        .blog-post-item {
+            animation: slideInUp 0.6s ease-out forwards;
+        }
+        .blog-post-item:nth-child(1) { animation-delay: 0.1s; }
+        .blog-post-item:nth-child(2) { animation-delay: 0.2s; }
+        .blog-post-item:nth-child(3) { animation-delay: 0.3s; }
+        .blog-post-item:nth-child(4) { animation-delay: 0.4s; }
+        .blog-post-item:nth-child(5) { animation-delay: 0.5s; }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .load-more-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .load-more-btn {
+            background-color: var(--color-primary-brown);
+            color: var(--color-white);
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-family: 'Georgia', serif;
+        }
+        .load-more-btn:hover {
+            background-color: var(--color-primary-brown-dark);
+        }
+        .load-more-btn:disabled {
+            background-color: var(--color-dark-gray);
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1><a href="index.html">Cafe OKUDA</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#concept">コンセプト</a></li>
+                    <li><a href="menu.html">メニュー</a></li>
+                    <li><a href="gallery.html">ギャラリー</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="index.html#access">アクセス</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <main>
+        <section id="blog-page" class="section fade-in-section">
+            <div class="container">
+                <h2 class="section-title">ブログ</h2>
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Blog Post 1 - 2025.06.15 -->
+                    <div class="blog-post-item" data-post-index="1">
+                        <img src="images/lunch/delicious-pizza-traditional-italian-pizza-2024-10-13-15-30-18-utc.JPG" alt="新しいランチメニュー" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">Cafe OKUDAの新しいランチメニューが登場！</a></h3>
+                            <p class="blog-post-meta">2025.06.15</p>
+                            <p>この度、Cafe OKUDAでは新しいランチメニューの提供を開始いたしました。こだわりの食材を使った、心温まる一皿をぜひお試しください。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 2 - 2025.05.28 -->
+                    <div class="blog-post-item" data-post-index="2">
+                        <img src="images/tea_drinks/taiwan-milk-tea-with-bubble-on-wood-background-2024-10-16-09-44-37-utc.jpeg" alt="台湾ミルクティー" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">もちもち食感がたまらない！台湾ミルクティー</a></h3>
+                            <p class="blog-post-meta">2025.05.28</p>
+                            <p>本場の味を再現した、OKUDA Coffeeの台湾ミルクティーの魅力。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 3 - 2025.05.12 -->
+                    <div class="blog-post-item" data-post-index="3">
+                        <img src="images/lunch/ramadan-food-2025-02-10-12-35-50-utc.jpg" alt="ラマダンフード" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">異文化を味わう：ラマダンプレート</a></h3>
+                            <p class="blog-post-meta">2025.05.12</p>
+                            <p>期間限定で提供される、異国情緒あふれるラマダンプレートをご紹介。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 4 - 2025.04.01 (一周年記念) -->
+                    <div class="blog-post-item" data-post-index="4">
+                        <img src="images/in_shop/warmth-cafe-on-a-dull-day-in-oslo-2025-02-10-11-57-03-utc.jpg" alt="一周年記念" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">🎉 Cafe OKUDA 一周年記念！感謝を込めて</a></h3>
+                            <p class="blog-post-meta">2025.04.01</p>
+                            <p>おかげさまで、Cafe OKUDAは開業から一周年を迎えることができました。この一年間、多くのお客様に愛され続けてきたことを心より感謝申し上げます。記念キャンペーンも実施中です！</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 5 - 2025.03.22 -->
+                    <div class="blog-post-item" data-post-index="5">
+                        <img src="images/barista/male-barista-pours-boiling-water-into-the-coffee-g-2025-03-26-18-03-54-utc.jpg" alt="バリスタの技" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">バリスタが語る、ハンドドリップの極意</a></h3>
+                            <p class="blog-post-meta">2025.03.22</p>
+                            <p>一杯のコーヒーに魂を込めるバリスタの技術。ハンドドリップで香りを最大限に引き出す秘訣を公開。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 6 - 2025.03.05 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="6">
+                        <img src="images/sweets/cheesecake-with-strawberry-and-mint-2024-10-18-01-40-27-utc.jpg" alt="ストロベリーチーズケーキ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">季節のフルーツを使った、ストロベリーチーズケーキ</a></h3>
+                            <p class="blog-post-meta">2025.03.05</p>
+                            <p>甘酸っぱいイチゴと濃厚なチーズの組み合わせが楽しめる、期間限定スイーツ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 7 - 2025.02.14 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="7">
+                        <img src="images/sweets/chocolate-cake-concept-of-delicious-and-tasty-de-2025-06-05-21-59-41-utc.jpg" alt="チョコレートケーキ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">至福のペアリング：コーヒーとチョコレート</a></h3>
+                            <p class="blog-post-meta">2025.02.14</p>
+                            <p>コーヒーと相性抜群のチョコレート。それぞれの風味を引き立て合う、最高の組み合わせを見つけましょう。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 8 - 2025.01.28 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="8">
+                        <img src="images/tea_drinks/a-glass-teapot-with-tea-on-a-wooden-board-2025-02-10-05-19-29-utc.jpg" alt="ハーブティー" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">心安らぐハーブティーの世界</a></h3>
+                            <p class="blog-post-meta">2025.01.28</p>
+                            <p>リラックス効果抜群のハーブティー。種類ごとの効能と、美味しい淹れ方をご紹介します。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 9 - 2025.01.10 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="9">
+                        <img src="images/in_shop/couple-ordering-in-the-cafe-2025-03-13-13-16-10-utc.jpg" alt="カフェ内観" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">OKUDA Coffeeの空間デザインに込めた想い</a></h3>
+                            <p class="blog-post-meta">2025.01.10</p>
+                            <p>お客様に最高の時間を提供するため、細部にまでこだわった店内のデザインをご紹介します。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 10 - 2024.12.25 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="10">
+                        <img src="images/light meal/blt-sandwich-on-the-wooden-board-2025-03-05-05-13-14-utc.jpg" alt="BLTサンドイッチ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">ランチタイムを彩る、ランチメニューの秘密</a></h3>
+                            <p class="blog-post-meta">2024.12.25</p>
+                            <p>コーヒーとの相性を考え抜いた、OKUDA Coffee自慢のランチメニュー開発秘話。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 11 - 2024.12.08 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="11">
+                        <img src="images/coffee/iced-coffee-or-caffe-latte-in-tall-glass-2025-05-18-05-43-33-utc.jpg" alt="アイスカフェラテ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">夏に飲みたい！ひんやりアイスドリンク特集</a></h3>
+                            <p class="blog-post-meta">2024.12.08</p>
+                            <p>暑い季節にぴったりの、OKUDA Coffee特製アイスドリンクをご紹介。爽やかな一杯でリフレッシュ！</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 12 - 2024.11.27 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="12">
+                        <img src="images/light meal/grilled-club-sandwich-panini-with-ham-tomato-che-2025-02-20-23-26-52-utc.jpg" alt="グリルパニーニ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">ランチの新定番：グリルパニーニ</a></h3>
+                            <p class="blog-post-meta">2024.11.27</p>
+                            <p>とろーりチーズとハムが絶妙な、OKUDA Coffeeのグリルパニーニ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 13 - 2024.11.18 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="13">
+                        <img src="images/sweets/belgium-waffles-with-raspberries-chocolate-and-sy-2025-02-20-23-29-28-utc.jpg" alt="ベルギーワッフル" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">手作りスイーツのこだわり：ベルギーワッフル</a></h3>
+                            <p class="blog-post-meta">2024.11.18</p>
+                            <p>外はサクサク、中はふわふわ。OKUDA Coffeeのベルギーワッフルが美味しい理由。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 14 - 2024.11.02 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="14">
+                        <img src="images/lunch/pasta-carbonara-with-bacon-egg-and-cheese-2025-02-22-15-44-16-utc.jpg" alt="カルボナーラ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">ランチにおすすめ！パスタメニューのご紹介</a></h3>
+                            <p class="blog-post-meta">2024.11.02</p>
+                            <p>ランチタイムに人気のパスタメニュー。シェフが腕を振るう、こだわりの一皿をぜひ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 15 - 2024.10.21 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="15">
+                        <img src="images/in_shop/glasses-with-black-coffee-and-filtered-water-2024-12-02-20-11-51-utc.jpg" alt="コーヒーと水" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">コーヒーをより美味しく：水へのこだわり</a></h3>
+                            <p class="blog-post-meta">2024.10.21</p>
+                            <p>OKUDA Coffeeがコーヒーの味を追求する上で欠かせない、水へのこだわりをご紹介。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 16 - 2024.10.15 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="16">
+                        <img src="images/barista/professional-female-barista-smiling-portrait-of-y-2025-04-02-08-50-15-utc.jpg" alt="女性バリスタ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">OKUDA Coffeeのバリスタたち：情熱を一杯に</a></h3>
+                            <p class="blog-post-meta">2024.10.15</p>
+                            <p>お客様に最高のコーヒー体験を届ける、OKUDA Coffeeのバリスタたちの素顔に迫ります。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 17 - 2024.09.30 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="17">
+                        <img src="images/coffee/fresh-tasty-espresso-2025-01-09-12-12-49-utc.jpg" alt="フレッシュエスプレッソ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">朝の目覚めに、一杯のエスプレッソを</a></h3>
+                            <p class="blog-post-meta">2024.09.30</p>
+                            <p>忙しい朝でも、OKUDA Coffeeのエスプレッソで贅沢なひとときを。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 18 - 2024.09.12 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="18">
+                        <img src="images/tea_drinks/milk-tea-with-brown-sugar-2025-03-08-14-33-08-utc.JPG" alt="黒糖ミルクティー" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">黒糖ミルクティーの隠れた魅力</a></h3>
+                            <p class="blog-post-meta">2024.09.12</p>
+                            <p>優しい甘さと独特の風味が人気の黒糖ミルクティー。その秘密に迫ります。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 19 - 2024.09.03 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="19">
+                        <img src="images/lunch/pasta-spaghetti-bolognese-with-minced-beef-sauce-2025-03-26-08-17-40-utc.jpg" alt="ボロネーゼ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">じっくり煮込んだ、自家製ボロネーゼ</a></h3>
+                            <p class="blog-post-meta">2024.09.03</p>
+                            <p>手間暇かけたミートソースが自慢の、OKUDA Coffeeのボロネーゼ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 20 - 2024.08.25 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="20">
+                        <img src="images/sweets/piece-of-caramel-souffle-cake-with-berries-2025-02-25-15-12-48-utc.jpg" alt="キャラメルスフレケーキ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">季節限定スイーツ：キャラメルスフレケーキ</a></h3>
+                            <p class="blog-post-meta">2024.08.25</p>
+                            <p>ふわふわの食感とキャラメルの香ばしさがたまらない、期間限定のスイーツ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 21 - 2024.08.14 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="21">
+                        <img src="images/sweets/vanilla-and-pink-ice-cream-in-a-pial-with-frozen-b-2025-01-08-22-29-45-utc.jpg" alt="バニラ＆ベリーアイス" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">見た目も可愛い！バニラ＆ベリーアイス</a></h3>
+                            <p class="blog-post-meta">2024.08.14</p>
+                            <p>甘酸っぱいベリーとバニラの組み合わせが絶妙な、見た目も華やかなアイス。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 22 - 2024.08.07 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="22">
+                        <img src="images/lunch/japanese-chicken-katsu-curry-stew-2025-01-16-16-16-33-utc.jpg" alt="カツカレー" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">OKUDA Coffeeのランチ：特製カツカレー</a></h3>
+                            <p class="blog-post-meta">2024.08.07</p>
+                            <p>ボリューム満点、スパイシーな特製カツカレーで午後の活力をチャージ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 23 - 2024.07.22 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="23">
+                        <img src="images/in_shop/friends-having-a-chat-talking-together-drinking-2025-03-09-08-14-44-utc.jpg" alt="カフェで談笑する友人たち" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">カフェで過ごす、友人との楽しい時間</a></h3>
+                            <p class="blog-post-meta">2024.07.22</p>
+                            <p>OKUDA Coffeeは、大切な人との語らいの場としても最適です。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 24 - 2024.07.05 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="24">
+                        <img src="images/tea_drinks/glass-of-apple-juice-2025-01-09-03-04-23-utc.jpg" alt="アップルジュース" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">お子様にも人気！フレッシュアップルジュース</a></h3>
+                            <p class="blog-post-meta">2024.07.05</p>
+                            <p>自然な甘さで、お子様から大人まで楽しめるOKUDA Coffeeのアップルジュース。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 25 - 2024.06.30 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="25">
+                        <img src="images/tea_drinks/food-still-life-in-a-dark-key-glass-mug-with-oran-2025-01-07-05-56-21-utc.jpg" alt="オレンジジュース" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">フレッシュジュースでビタミンチャージ！</a></h3>
+                            <p class="blog-post-meta">2024.06.30</p>
+                            <p>搾りたてのフルーツを使った、OKUDA Coffeeのフレッシュジュースで健康的にリフレッシュ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 26 - 2024.06.18 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="26">
+                        <img src="images/sweets/vanilla-panna-cotta-2025-01-09-02-51-01-utc.jpg" alt="バニラパンナコッタ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">シンプルだからこそ奥深い、バニラパンナコッタ</a></h3>
+                            <p class="blog-post-meta">2024.06.18</p>
+                            <p>なめらかな口どけと、バニラの香りが広がるOKUDA Coffeeの定番デザート。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 27 - 2024.06.01 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="27">
+                        <img src="images/lunch/pasta-spaghetti-with-tomato-sauce-2024-10-23-00-25-40-utc.jpg" alt="トマトパスタ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">旬のトマトを使った、爽やかパスタ</a></h3>
+                            <p class="blog-post-meta">2024.06.01</p>
+                            <p>フレッシュなトマトの酸味と甘みが食欲をそそる、季節限定パスタ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 28 - 2024.05.19 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="28">
+                        <img src="images/lunch/delicious-pizza-traditional-italian-pizza-2024-10-16-21-17-03-utc.JPG" alt="ピザ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">ランチに最適！本格イタリアンピザ</a></h3>
+                            <p class="blog-post-meta">2024.05.19</p>
+                            <p>OKUDA Coffeeで味わう、本場イタリアの味。ランチタイムにぜひ。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 29 - 2024.05.15 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="29">
+                        <img src="images/barista/handsome-barista-man-during-work-in-his-street-cof-2024-10-16-07-20-15-utc.jpg" alt="男性バリスタ" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">バリスタの日常：一杯にかける情熱</a></h3>
+                            <p class="blog-post-meta">2024.05.15</p>
+                            <p>OKUDA Coffeeのバリスタたちが、日々の仕事にかける情熱をご紹介します。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 30 - 2024.04.28 -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="30">
+                        <img src="images/sweets/set-of-ice-cream-2024-12-07-18-11-33-utc.jpg" alt="アイスクリームセット" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">食後のデザートに、選べるアイスクリーム</a></h3>
+                            <p class="blog-post-meta">2024.04.28</p>
+                            <p>豊富なフレーバーからお好みをどうぞ。食後の締めくくりにぴったりのデザート。</p>
+                        </div>
+                    </div>
+                    <!-- Blog Post 31 - 2024.04.01 (グランドオープン) -->
+                    <div class="blog-post-item blog-post-hidden" data-post-index="31">
+                        <img src="images/in_shop/warmth-cafe-on-a-dull-day-in-oslo-2025-02-10-11-57-03-utc.jpg" alt="店舗オープン" class="blog-post-image">
+                        <div class="blog-post-content">
+                            <h3><a href="#">Cafe OKUDA、グランドオープン！</a></h3>
+                            <p class="blog-post-meta">2024.04.01</p>
+                            <p>ついにCafe OKUDAがオープンいたしました！皆様のお越しを心よりお待ちしております。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="loadMoreBtn">もっと見る</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cafe OKUDA. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

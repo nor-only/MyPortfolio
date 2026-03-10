@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-ja="アクセス - Hotel OKUDA" data-en="Access - Hotel OKUDA">アクセス - Hotel OKUDA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="color: #fff; text-decoration: none;">Hotel OKUDA</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#concept" data-ja="コンセプト" data-en="Concept">コンセプト</a></li>
+                <li><a href="rooms.html" data-ja="客室" data-en="Rooms">客室</a></li>
+                <li><a href="services.html" data-ja="レストラン/スパ" data-en="Restaurant/Spa">レストラン/スパ</a></li>
+                <li><a href="access.html" data-ja="アクセス" data-en="Access">アクセス</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="language-switcher">
+                <a href="#" class="lang-btn" data-lang-switch="ja">JP</a> / <a href="#" class="lang-btn" data-lang-switch="en">EN</a>
+            </div>
+            <a href="#" class="cta-button reservation-btn" data-ja="ご予約" data-en="Reserve">ご予約</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero fade-in" style="background-image: url('https://images.unsplash.com/photo-1561371255-84455d6b3d40?q=80&w=2874&auto=format&fit=crop');">
+            <h1 data-ja="アクセス" data-en="Access">アクセス</h1>
+        </section>
+
+        <section id="access-detail" class="fade-in">
+            <h2 data-ja="交通のご案内" data-en="Transportation Information">交通のご案内</h2>
+            <div class="access-info">
+                <p><strong>_Address:</strong> 〒100-0005 東京都千代田区丸の内1-1-1</p>
+                <p><strong data-ja="電車でのアクセス:" data-en="Access by Train:">電車でのアクセス:</strong></p>
+                <ul>
+                    <li data-ja="JR東京駅 丸の内中央口より徒歩5分" data-en="5 minutes walk from JR Tokyo Station Marunouchi Central Exit">JR東京駅 丸の内中央口より徒歩5分</li>
+                    <li data-ja="東京メトロ丸ノ内線 東京駅 直結" data-en="Directly connected to Tokyo Station on the Tokyo Metro Marunouchi Line">東京メトロ丸ノ内線 東京駅 直結</li>
+                </ul>
+                <p><strong data-ja="空港からのアクセス:" data-en="Access from the Airport:">空港からのアクセス:</strong></p>
+                <ul>
+                    <li data-ja="羽田空港から: リムジンバスで約40分、または電車で約30分" data-en="From Haneda Airport: About 40 minutes by limousine bus or about 30 minutes by train">羽田空港から: リムジンバスで約40分、または電車で約30分</li>
+                    <li data-ja="成田空港から: 成田エクスプレスで約60分" data-en="From Narita Airport: About 60 minutes by Narita Express">成田空港から: 成田エクスプレスで約60分</li>
+                </ul>
+                 <p><strong data-ja="お車でのアクセス:" data-en="Access by Car:">お車でのアクセス:</strong></p>
+                <ul>
+                    <li data-ja="首都高速都心環状線「丸の内出口」より約5分" data-en="About 5 minutes from the Marunouchi Exit on the Metropolitan Expressway Inner Circular Route">首都高速都心環状線「丸の内出口」より約5分</li>
+                    <li data-ja="駐車場: 100台収容可能（ご宿泊のお客様は割引あり）" data-en="Parking: Available for 100 cars (discount for hotel guests)">駐車場: 100台収容可能（ご宿泊のお客様は割引あり）</li>
+                </ul>
+            </div>
+            <div class="map-container-large">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.828030334828!2d139.76493611525822!3d35.68123618019422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f7f0d%3A0x3f2d858232424864!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1678886616163!5m2!1sja!2sjp" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Hotel OKUDA. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 予約モーダル -->
+    <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 data-ja="ご予約" data-en="Reservation">ご予約</h2>
+            <form>
+                <label for="checkin" data-ja="チェックイン" data-en="Check-in">チェックイン:</label>
+                <input type="date" id="checkin" name="checkin">
+                <label for="checkout" data-ja="チェックアウト" data-en="Check-out">チェックアウト:</label>
+                <input type="date" id="checkout" name="checkout">
+                <label for="guests" data-ja="人数" data-en="Number of Guests">人数:</label>
+                <input type="number" id="guests" name="guests" min="1" value="1">
+                <button type="submit" class="cta-button" data-ja="予約する" data-en="Book Now">予約する</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ページトップへ戻るボタン -->
+    <a href="#" id="back-to-top" class="back-to-top-btn">&uarr;</a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

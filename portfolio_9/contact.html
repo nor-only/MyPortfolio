@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - OKUDA's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">OKUDA</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="works.html" class="nav-link">Works</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="contact" class="content-section">
+            <h1 class="section-title">Contact</h1>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>お問い合わせ</h2>
+                    <p>Web制作のご依頼やご相談がございましたら、お気軽にお問い合わせください。</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <a href="mailto:nori@example.com">nori@example.com</a>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>📱 SNS</h3>
+                            <div class="social-links">
+                                <a href="#" target="_blank">Twitter</a>
+                                <a href="#" target="_blank">Instagram</a>
+                                <a href="#" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>📍 Location</h3>
+                            <p>東京都内</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>⏰ 営業時間</h3>
+                            <p>平日 9:00 - 18:00<br>
+                            土日祝 要相談</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>お問い合わせフォーム</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">お名前 *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">メールアドレス *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">会社名</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">件名 *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">選択してください</option>
+                                <option value="web-design">Webデザイン制作</option>
+                                <option value="web-development">Web開発</option>
+                                <option value="consulting">制作相談</option>
+                                <option value="maintenance">保守・メンテナンス</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">予算</label>
+                            <select id="budget" name="budget">
+                                <option value="">選択してください</option>
+                                <option value="under-50">50万円未満</option>
+                                <option value="50-100">50万円〜100万円</option>
+                                <option value="100-200">100万円〜200万円</option>
+                                <option value="over-200">200万円以上</option>
+                                <option value="discuss">要相談</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline">希望納期</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">選択してください</option>
+                                <option value="asap">至急（1ヶ月以内）</option>
+                                <option value="1-2months">1〜2ヶ月</option>
+                                <option value="2-3months">2〜3ヶ月</option>
+                                <option value="flexible">柔軟に対応可能</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">メッセージ *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="プロジェクトの詳細や要望をお聞かせください" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">送信する</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="response-info">
+                <h2>対応について</h2>
+                <ul>
+                    <li>お問い合わせいただいてから24時間以内にご返信いたします</li>
+                    <li>初回のご相談は無料で承ります</li>
+                    <li>お見積もりは無料で作成いたします</li>
+                    <li>守秘義務契約に基づき、情報は厳重に管理いたします</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 OKUDA's Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

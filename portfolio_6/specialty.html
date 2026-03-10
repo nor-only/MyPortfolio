@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>専門外来 - 奥田歯科クリニック</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <div class="nav__logo">
+                        <a href="index.html" class="nav__logo-link">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-desktop" style="height: 80px;">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-mobile" style="height: 80px; display: none;">
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">トップ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">当院について</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="medical.html" class="nav__link">診療案内</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="treatment.html" class="nav__link">治療・検査</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="specialty.html" class="nav__link active">専門外来</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="patients.html" class="nav__link">患者さまへ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link">お知らせ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">ブログ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="section-header page-title-header">
+            <h1 class="section-title">専門外来</h1>
+            <p class="section-subtitle">Specialty Clinics</p>
+        </section>
+
+        <!-- Specialty Section -->
+        <section id="specialty" class="specialty">
+            <div class="container">
+                <div class="specialty__grid" style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: var(--spacing-xl);">
+                    <div class="specialty-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="specialty-card__header">
+                            <h3>矯正歯科外来</h3>
+                        </div>
+                        <p>歯並びや咬合の不正を改善し、美しい笑顔と機能的な咬合を実現します。</p>
+                        <ul class="specialty-card__features">
+                            <li>矯正相談</li>
+                            <li>ワイヤー矯正</li>
+                            <li>マウスピース矯正</li>
+                            <li>小児矯正</li>
+                        </ul>
+                        <div class="specialty-details">
+                            <h4>対象症状</h4>
+                            <ul>
+                                <li>歯並びの乱れ</li>
+                                <li>出っ歯（上顧前突）</li>
+                                <li>受け口（下顔前突）</li>
+                                <li>開咬（前歯部開咬）</li>
+                                <li>過蓋咬合（深い咬み合わせ）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="specialty-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="specialty-card__header">
+                            <h3>インプラント外来</h3>
+                        </div>
+                        <p>失った歯を人工歯根（インプラント）で補う高度な治療を提供します。</p>
+                        <ul class="specialty-card__features">
+                            <li>インプラント相談</li>
+                            <li>CT診断</li>
+                            <li>インプラント手術</li>
+                            <li>メンテナンス</li>
+                        </ul>
+                        <div class="specialty-details">
+                            <h4>治療流れ</h4>
+                            <ul>
+                                <li>精密検査・CT撮影</li>
+                                <li>治療計画立案</li>
+                                <li>インプラント埋入手術</li>
+                                <li>上部構造作製・装着</li>
+                                <li>定期メンテナンス</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="specialty-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="specialty-card__header">
+                            <h3>小児歯科外来</h3>
+                        </div>
+                        <p>お子様の歯の健康を守り、正しい成長をサポートする専門診療です。</p>
+                        <ul class="specialty-card__features">
+                            <li>乳歯虫歯治療</li>
+                            <li>予防処置</li>
+                            <li>歯並び相談</li>
+                            <li>歯磨き指導</li>
+                        </ul>
+                        <div class="specialty-details">
+                            <h4>主な治療内容</h4>
+                            <ul>
+                                <li>乳歯・永久歯の虫歯治療</li>
+                                <li>フッ素塗布・シーラント</li>
+                                <li>歯並び・咬合の相談</li>
+                                <li>歯磨き・食生活指導</li>
+                                <li>外傷歯の治療</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="specialty-card__header">
+                            <h3>審美歯科外来</h3>
+                        </div>
+                        <p>歯の美しさと機能を向上させ、美しい笑顔と自信を取り戻します。</p>
+                        <ul class="specialty-card__features">
+                            <li>ホワイトニング</li>
+                            <li>セラミック治療</li>
+                            <li>歯肉整形</li>
+                            <li>ラミネートベニア</li>
+                        </ul>
+                        <div class="specialty-details">
+                            <h4>治療メニュー</h4>
+                            <ul>
+                                <li>オフィスホワイトニング</li>
+                                <li>ホームホワイトニング</li>
+                                <li>セラミッククラウン</li>
+                                <li>ポーセレンラミネート</li>
+                                <li>歯肉ピーリング</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="specialty-card__header">
+                            <h3>歯周病外来</h3>
+                        </div>
+                        <p>歯ぐきの病気である歯周病の予防と治療を専門的に行います。</p>
+                        <ul class="specialty-card__features">
+                            <li>歯周病検査</li>
+                            <li>スケーリング</li>
+                            <li>歯周外科</li>
+                            <li>メンテナンス</li>
+                        </ul>
+                        <div class="specialty-details">
+                            <h4>治療内容</h4>
+                            <ul>
+                                <li>歯周ポケット測定</li>
+                                <li>スケーリング・ルートプレーニング</li>
+                                <li>歯周外科手術</li>
+                                <li>再生療法</li>
+                                <li>定期メンテナンス</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="specialty-card" style="flex: 0 1 400px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <div class="specialty-card__header">
+                            <h3>顎関節症外来</h3>
+                        </div>
+                        <p>顎関節の痛みや開口障害など、顎関節症の診断と治療を行います。</p>
+                        <ul class="specialty-card__features">
+                            <li>顎関節検査</li>
+                            <li>スプリント療法</li>
+                            <li>理学療法</li>
+                            <li>生活指導</li>
+                        </ul>
+                        <div class="specialty-details">
+                            <h4>主な症状</h4>
+                            <ul>
+                                <li>顎関節の痛み</li>
+                                <li>口が大きく開かない</li>
+                                <li>顎関節の音や雑音</li>
+                                <li>咬み合わせの違和感</li>
+                                <li>顔面の痛みやこわばり</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section class="appointment-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">専門外来の予約について</h2>
+                    <p class="section-subtitle">Appointment Information</p>
+                </div>
+                
+                <div class="appointment-info" style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: var(--spacing-xl);">
+                    <div class="appointment-card" style="flex: 0 1 350px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <h3>予約方法</h3>
+                        <p>専門外来は完全予約制です。お気軽にお電話ください。</p>
+                        <div class="phone-number">03-1234-5678</div>
+                        <p style="margin-top: var(--spacing-md); font-size: 0.9rem; color: var(--text-light);">受付時間：平日9:00-17:00 / 土曜9:00-12:00</p>
+                    </div>
+                    
+                    <div class="appointment-card" style="flex: 0 1 350px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <h3>専門外来診療時間</h3>
+                        <p>専門性の高い治療をご提供するため、十分な時間を確保しております。</p>
+                        <div class="schedule">
+                            <div class="schedule-item">
+                                <span>月・水・金</span>
+                                <span>14:00-17:00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span>土曜日</span>
+                                <span>10:00-12:00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span>休診</span>
+                                <span>火・木・日・祝日</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="appointment-card" style="flex: 0 1 350px; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <h3>初診時の持ち物</h3>
+                        <p style="margin-bottom: var(--spacing-md); font-size: 0.95rem;">初回受診時に以下をお持ちください</p>
+                        <ul>
+                            <li>健康保険証</li>
+                            <li>お薬手帳（服用中の方）</li>
+                            <li>紹介状（お持ちの方）</li>
+                            <li>過去の歯科レントゲン写真</li>
+                            <li>治療中の歯科がある方は紹介状</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="footer__logo" style="height: 80px; margin-bottom: 20px;">
+                    <div class="footer__contact">
+                        <p>〒100-8111 東京都千代田区千代田1-1</p>
+                        <p>TEL: 03-1234-5678</p>
+                        <p>JR東京駅 徒歩5分</p>
+                    </div>
+                </div>
+                
+                <div class="footer__hours">
+                    <h4>診療時間</h4>
+                    <div class="footer-schedule-table-wrapper">
+                        <table class="footer-schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-label">09:00-12:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot special">▲</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-label">14:00-17:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot closed">/</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 奥田歯科クリニック. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

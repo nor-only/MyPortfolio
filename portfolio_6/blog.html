@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ - 奥田歯科クリニック</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <div class="nav__logo">
+                        <a href="index.html" class="nav__logo-link">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-desktop" style="height: 80px;">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-mobile" style="height: 80px; display: none;">
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">トップ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">当院について</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="medical.html" class="nav__link">診療案内</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="treatment.html" class="nav__link">治療・検査</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="specialty.html" class="nav__link">専門外来</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="patients.html" class="nav__link">患者さまへ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link">お知らせ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link active">ブログ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="section-header page-title-header">
+            <h1 class="section-title">歯科ブログ</h1>
+            <p class="section-subtitle">Dental Blog</p>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="news">
+            <div class="container">
+                <div class="news__content">
+                    <div class="news-list">
+                        <article class="news-item featured">
+                            <div class="news-item__date">2025.12.18</div>
+                            <div class="news-item__category">予防法</div>
+                            <h3 class="news-item__title">冬の乾燥から歯ぐきを守る方法</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">乾燥する季節に気をつけたい口腔ケア方法をご紹介します。</p>
+                                <div class="news-detail">
+                                    <p>冬場は空気が乾燥し、口腔内の粘膜が乾いて細菌が繁殖しやすくなります。以下の対策で口腔健康を守りましょう。</p>
+                                    <h4>効果的な予防法</h4>
+                                    <ul>
+                                        <li><strong>こまめな水分補給</strong> - 口腔内の乾燥を防ぐ</li>
+                                        <li><strong>室内の加湿</strong> - 湿度50～60％で口腔乾燥を防止</li>
+                                        <li><strong>こまめな歯みがき</strong> - 朝昼晩の3回は基本</li>
+                                        <li><strong>マウスウォッシュ</strong> - 歯みがき後の仕上げに</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.12.12</div>
+                            <div class="news-item__category">治療解説</div>
+                            <h3 class="news-item__title">インプラント治療の最新技術</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">デジタル技術を活用したインプラント治療について解説します。</p>
+                                <div class="news-detail">
+                                    <p>インプラント治療は近年大きく進歩しています。デジタル技術により、より精密で安全な治療が可能となりました。</p>
+                                    <h4>最新技術の特徴</h4>
+                                    <ul>
+                                        <li><strong>3Dシミュレーション</strong> - 事前に治療計画を立案</li>
+                                        <li><strong>ガイデッドサージェリー</strong> - より正確な埋入位置</li>
+                                        <li><strong>デジタル印象</strong> - 型取りが楽になりました</li>
+                                        <li><strong>CAD/CAM技術</strong> - 精密な被せ物の製作</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.12.05</div>
+                            <div class="news-item__category">小児歯科</div>
+                            <h3 class="news-item__title">お子様の虫歯を予防するには</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">小児の虫歯予防法と早期発見のポイントをお伝えします。</p>
+                                <div class="news-detail">
+                                    <p>お子様の虫歯は初期症状が分かりにくく、早期発見・早期治療が重要です。</p>
+                                    <h4>予防のポイント</h4>
+                                    <ul>
+                                        <li><strong>フッ素塗布</strong> - 定期的なフッ素塗布で歯質強化</li>
+                                        <li><strong>シーラント</strong> - 奥歯の溝を埋めて虫歯予防</li>
+                                        <li><strong>正しい歯みがき</strong> - 保護者による仕上げみがき</li>
+                                        <li><strong>食生活の管理</strong> - おやつの時間と量をコントロール</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.11.28</div>
+                            <div class="news-item__category">歯周病</div>
+                            <h3 class="news-item__title">歯周病について知っておきたいこと</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">歯周病は早期治療が重要な疾患です。症状や治療について詳しく解説いたします。</p>
+                                <div class="news-detail">
+                                    <p>歯周病は日本人の成人の約8割が罹患している疾患で、早期の治療開始が歯の保存に重要です。</p>
+                                    <h4>主な症状</h4>
+                                    <ul>
+                                        <li>歯ぐきの腫れや出血</li>
+                                        <li>口臭</li>
+                                        <li>歯のぐらつき</li>
+                                        <li>歯ぐきの後退</li>
+                                    </ul>
+                                    <p>症状に気づいたら、できるだけ早く受診することをおすすめします。</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.11.20</div>
+                            <div class="news-item__category">審美歯科</div>
+                            <h3 class="news-item__title">ホワイトニングの種類と効果</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">オフィスホワイトニングとホームホワイトニングの違いについて。</p>
+                                <div class="news-detail">
+                                    <p>ホワイトニングには歯科医院で行う方法とご自宅で行う方法があります。それぞれの特徴をご紹介します。</p>
+                                    <h4>ホワイトニングの種類</h4>
+                                    <ul>
+                                        <li><strong>オフィスホワイトニング</strong> - 即効性が高く短時間で効果実感</li>
+                                        <li><strong>ホームホワイトニング</strong> - 自然な白さで長期間効果持続</li>
+                                        <li><strong>デュアルホワイトニング</strong> - 両方を併用してより高い効果</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.11.15</div>
+                            <div class="news-item__category">矯正歯科</div>
+                            <h3 class="news-item__title">大人の矯正治療について</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">成人矯正の種類と特徴について分かりやすく説明します。</p>
+                                <div class="news-detail">
+                                    <p>大人の矯正治療には様々な選択肢があります。ライフスタイルに合わせた治療法を選択できます。</p>
+                                    <h4>矯正装置の種類</h4>
+                                    <ul>
+                                        <li><strong>ワイヤー矯正</strong> - 確実性の高い従来の矯正方法</li>
+                                        <li><strong>マウスピース矯正</strong> - 透明で目立たない装置</li>
+                                        <li><strong>裏側矯正</strong> - 装置が見えない矯正治療</li>
+                                        <li><strong>部分矯正</strong> - 気になる部分だけの治療</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination" style="display: flex; justify-content: center; align-items: center; gap: var(--spacing-sm); margin: var(--spacing-xxl) 0;">
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">←</a>
+                        <a href="#" class="pagination__btn pagination__btn--active" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--gradient-accent); color: white; text-decoration: none; font-weight: 600; box-shadow: var(--shadow-soft); border: 2px solid transparent;">1</a>
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">2</a>
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">3</a>
+                        <span style="color: var(--text-light); padding: 0 var(--spacing-sm);">…</span>
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">8</a>
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">→</a>
+                    </div>
+                </div>
+                
+                <!-- Sidebar -->
+                <aside class="news-sidebar" style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
+                    <!-- Compact Navigation Section -->
+                    <div class="sidebar-section" style="background: var(--bg-card); padding: var(--spacing-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);">
+                        <h3 style="font-size: 1.2rem; margin-bottom: var(--spacing-md); color: var(--text-primary); font-weight: 500; border-bottom: 2px solid var(--gradient-pink); padding-bottom: var(--spacing-xs); display: inline-block;">ブログナビゲーション</h3>
+                        
+                        <!-- Categories - Compact -->
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm); color: var(--text-secondary); font-weight: 500;">カテゴリー</h4>
+                            <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-xs);">
+                                <a href="#" style="background: var(--gradient-accent); color: white; padding: 0.3rem 0.6rem; border-radius: 12px; text-decoration: none; font-size: 0.8rem; font-weight: 500;">すべて 15</a>
+                                <a href="#" style="background: var(--bg-secondary); color: var(--text-secondary); padding: 0.3rem 0.6rem; border-radius: 12px; text-decoration: none; font-size: 0.8rem;">予防法 3</a>
+                                <a href="#" style="background: var(--bg-secondary); color: var(--text-secondary); padding: 0.3rem 0.6rem; border-radius: 12px; text-decoration: none; font-size: 0.8rem;">治療解説 4</a>
+                                <a href="#" style="background: var(--bg-secondary); color: var(--text-secondary); padding: 0.3rem 0.6rem; border-radius: 12px; text-decoration: none; font-size: 0.8rem;">小児歯科 2</a>
+                                <a href="#" style="background: var(--bg-secondary); color: var(--text-secondary); padding: 0.3rem 0.6rem; border-radius: 12px; text-decoration: none; font-size: 0.8rem;">歯周病 3</a>
+                                <a href="#" style="background: var(--bg-secondary); color: var(--text-secondary); padding: 0.3rem 0.6rem; border-radius: 12px; text-decoration: none; font-size: 0.8rem;">審美歯科 2</a>
+                                <a href="#" style="background: var(--bg-secondary); color: var(--text-secondary); padding: 0.3rem 0.6rem; border-radius: 12px; text-decoration: none; font-size: 0.8rem;">矯正歯科 1</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Popular Posts - Compact -->
+                        <div style="margin-bottom: var(--spacing-md);">
+                            <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm); color: var(--text-secondary); font-weight: 500;">人気記事</h4>
+                            <div style="display: flex; flex-direction: column; gap: var(--spacing-xs);">
+                                <a href="#" style="display: flex; align-items: center; gap: var(--spacing-xs); text-decoration: none; padding: var(--spacing-xs); border-radius: var(--radius-sm); transition: var(--transition-fast);">
+                                    <span style="background: var(--gradient-accent); color: white; width: 1.2rem; height: 1.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 600; flex-shrink: 0;">1</span>
+                                    <span style="color: var(--text-primary); font-size: 0.9rem; line-height: 1.3;">正しい歯みがきの方法</span>
+                                </a>
+                                <a href="#" style="display: flex; align-items: center; gap: var(--spacing-xs); text-decoration: none; padding: var(--spacing-xs); border-radius: var(--radius-sm); transition: var(--transition-fast);">
+                                    <span style="background: var(--gradient-accent); color: white; width: 1.2rem; height: 1.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 600; flex-shrink: 0;">2</span>
+                                    <span style="color: var(--text-primary); font-size: 0.9rem; line-height: 1.3;">インプラントと入れ歯の違い</span>
+                                </a>
+                                <a href="#" style="display: flex; align-items: center; gap: var(--spacing-xs); text-decoration: none; padding: var(--spacing-xs); border-radius: var(--radius-sm); transition: var(--transition-fast);">
+                                    <span style="background: var(--gradient-accent); color: white; width: 1.2rem; height: 1.2rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 600; flex-shrink: 0;">3</span>
+                                    <span style="color: var(--text-primary); font-size: 0.9rem; line-height: 1.3;">歯周病の症状と治療</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Archive - Compact -->
+                        <div>
+                            <h4 style="font-size: 1rem; margin-bottom: var(--spacing-sm); color: var(--text-secondary); font-weight: 500;">アーカイブ</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xs); font-size: 0.85rem;">
+                                <a href="#" style="color: var(--text-secondary); text-decoration: none; padding: var(--spacing-xs); background: var(--bg-secondary); border-radius: var(--radius-sm); text-align: center; transition: var(--transition-fast);">2025.12</a>
+                                <a href="#" style="color: var(--text-secondary); text-decoration: none; padding: var(--spacing-xs); background: var(--bg-secondary); border-radius: var(--radius-sm); text-align: center; transition: var(--transition-fast);">2025.11</a>
+                                <a href="#" style="color: var(--text-secondary); text-decoration: none; padding: var(--spacing-xs); background: var(--bg-secondary); border-radius: var(--radius-sm); text-align: center; transition: var(--transition-fast);">2025.10</a>
+                                <a href="#" style="color: var(--text-secondary); text-decoration: none; padding: var(--spacing-xs); background: var(--bg-secondary); border-radius: var(--radius-sm); text-align: center; transition: var(--transition-fast);">2025.09</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Section -->
+                    <div class="sidebar-section" style="background: linear-gradient(135deg, var(--gradient-pink), var(--gradient-purple)); padding: var(--spacing-lg); border-radius: var(--radius-lg); box-shadow: var(--shadow-medium); color: white;">
+                        <h3 style="font-size: 1.2rem; margin-bottom: var(--spacing-md); color: white; font-weight: 500; border-bottom: 2px solid rgba(255, 255, 255, 0.3); padding-bottom: var(--spacing-xs); display: inline-block;">お問い合わせ</h3>
+                        <div class="contact-widget">
+                            <p style="color: rgba(255, 255, 255, 0.9); font-size: 0.9rem; line-height: 1.5; margin-bottom: var(--spacing-sm);">記事に関するご質問やご相談がございましたらお気軽にお問い合わせください。</p>
+                            <div class="phone-number" style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); padding: var(--spacing-sm); border-radius: var(--radius-md); text-align: center; margin-bottom: var(--spacing-sm);">
+                                <div style="font-size: 1.3rem; font-weight: 600; color: white; margin-bottom: 0.2rem;">03-1234-5678</div>
+                                <p class="hours" style="color: rgba(255, 255, 255, 0.8); font-size: 0.8rem; margin: 0;">平日 9:00-18:00 / 土曜 9:00-13:00</p>
+                            </div>
+                            <a href="#" style="display: block; text-align: center; background: rgba(255, 255, 255, 0.9); color: var(--primary-color); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-md); text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: var(--transition-fast);">メールでお問い合わせ</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="footer__logo" style="height: 80px; margin-bottom: 20px;">
+                    <div class="footer__contact">
+                        <p>〒100-8111 東京都千代田区千代田1-1</p>
+                        <p>TEL: 03-1234-5678</p>
+                        <p>JR東京駅 徒歩5分</p>
+                    </div>
+                </div>
+                
+                <div class="footer__hours">
+                    <h4>診療時間</h4>
+                    <div class="footer-schedule-table-wrapper">
+                        <table class="footer-schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-label">09:00-12:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot special">▲</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-label">14:00-17:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot closed">/</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 奥田歯科クリニック. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

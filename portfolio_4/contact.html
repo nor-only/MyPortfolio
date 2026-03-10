@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 奥田農園</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Hachi+Maru+Pop&family=Kosugi+Maru&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="index.html" class="logo">奥田農園</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="products.html">農作物</a></li>
+                <li><a href="about.html">私たちについて</a></li>
+                <li><a href="shop.html">オンラインショップ</a></li>
+                <li><a href="blog.html">農園日記</a></li>
+                <li><a href="contact.html" class="cta-button">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>お問い合わせ</h1>
+                <p>ご質問やご相談など、お気軽にお問い合わせください。</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>お問い合わせ先</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>住所</h4>
+                                <p>〒000-0000 広島県○○市○○町1-1</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>電話番号</h4>
+                                <p>0000-00-0000</p>
+                                <p>受付時間：9:00-18:00（土日祝除く）</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>メールアドレス</h4>
+                                <p>info@okuda-farm.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>お問い合わせフォーム</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">お名前 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">メールアドレス *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">電話番号</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">件名 *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">選択してください</option>
+                                    <option value="product">農作物について</option>
+                                    <option value="order">注文について</option>
+                                    <option value="visit">農園見学について</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">お問い合わせ内容 *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">送信する</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h3>アクセス</h3>
+                <div class="map-placeholder">
+                    <p>農園の地図をここに表示</p>
+                    <p>（実際の地図サービスと連携）</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>奥田農園</h3>
+                    <p>〒000-0000 広島県○○市○○町1-1</p>
+                    <p>TEL: 0000-00-0000</p>
+                    <p>Email: info@okuda-farm.com</p>
+                </div>
+                <div class="footer-links">
+                    <a href="products.html">農作物</a>
+                    <a href="about.html">私たちについて</a>
+                    <a href="shop.html">オンラインショップ</a>
+                    <a href="blog.html">農園日記</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 奥田農園. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

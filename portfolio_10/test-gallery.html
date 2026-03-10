@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体験ギャラリーテスト</title>
+    <style>
+        body { background: #1a1612; color: #f5f3f0; padding: 20px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 600px; }
+        .gallery-item { border: 1px solid #8b7555; padding: 10px; text-align: center; }
+        img { max-width: 200px; height: 150px; object-fit: cover; }
+        .error { color: red; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>体験ギャラリー画像テスト</h1>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <h3>星空キャンプ</h3>
+            <img src="images/starry-night-camping.jpg" alt="星空キャンプ" onerror="this.nextSibling.style.display='block'">
+            <div class="error" style="display:none">エラー: starry-night-camping.jpg が見つかりません</div>
+            <p>満天の星空</p>
+        </div>
+        
+        <div class="gallery-item">
+            <h3>BBQステーキ</h3>
+            <img src="images/bbq-steak-grilling.jpg" alt="BBQステーキ" onerror="this.nextSibling.style.display='block'">
+            <div class="error" style="display:none">エラー: bbq-steak-grilling.jpg が見つかりません</div>
+            <p>本格BBQ</p>
+        </div>
+        
+        <div class="gallery-item">
+            <h3>子供の冒険</h3>
+            <img src="images/child-adventure-play.jpg" alt="子供の冒険" onerror="this.nextSibling.style.display='block'">
+            <div class="error" style="display:none">エラー: child-adventure-play.jpg が見つかりません</div>
+            <p>家族での冒険</p>
+        </div>
+        
+        <div class="gallery-item">
+            <h3>湖畔キャンプ</h3>
+            <img src="images/lakeside-tent-camping.jpg" alt="湖畔キャンプ" onerror="this.nextSibling.style.display='block'">
+            <div class="error" style="display:none">エラー: lakeside-tent-camping.jpg が見つかりません</div>
+            <p>湖畔の静寂</p>
+        </div>
+    </div>
+    
+    <p style="color: #8b7555; margin-top: 20px;">※ 画像が表示されない場合はエラーメッセージが表示されます</p>
+</body>
+</html>

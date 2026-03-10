@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お知らせ - 奥田歯科クリニック</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <div class="nav__logo">
+                        <a href="index.html" class="nav__logo-link">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-desktop" style="height: 80px;">
+                            <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="nav__logo-mobile" style="height: 80px; display: none;">
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="nav__toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav__menu" id="nav-menu">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">トップ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">当院について</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="medical.html" class="nav__link">診療案内</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="treatment.html" class="nav__link">治療・検査</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="specialty.html" class="nav__link">専門外来</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="patients.html" class="nav__link">患者さまへ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="news.html" class="nav__link active">お知らせ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">ブログ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="section-header page-title-header">
+            <h1 class="section-title">お知らせ</h1>
+            <p class="section-subtitle">News & Information</p>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="news">
+            <div class="container">
+                <div class="news__content">
+                    <div class="news-list">
+                        <article class="news-item featured">
+                            <div class="news-item__date">2025.12.20</div>
+                            <div class="news-item__category important">重要</div>
+                            <h3 class="news-item__title">年末年始の診療スケジュールについて</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">年末年始の診療日程をお知らせいたします。</p>
+                                <div class="news-detail">
+                                    <h4>年末年始休診日</h4>
+                                    <ul>
+                                        <li>12月29日（金）～1月3日（水）</li>
+                                        <li>1月4日（木）より通常診療を開始いたします</li>
+                                    </ul>
+                                    <h4>年末最終診療日</h4>
+                                    <p>12月28日（木）まで通常通り診療いたします。</p>
+                                    <h4>緊急時の対応</h4>
+                                    <p>休診期間中の緊急時は、世田谷区夜間急病センター（TEL: 03-xxxx-xxxx）をご利用ください。</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.12.15</div>
+                            <div class="news-item__category">設備導入</div>
+                            <h3 class="news-item__title">最新のデジタルレントゲンシステムを導入しました</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">より精密な歯科診断が可能になりました。</p>
+                                <div class="news-detail">
+                                    <p>この度、最新のデジタルレントゲンシステムを導入いたしました。従来のフィルムレントゲンと比較して、より鮮明で詳細な画像での診断が可能となり、早期発見・早期治療に繋がります。</p>
+                                    <h4>新システムの特徴</h4>
+                                    <ul>
+                                        <li>高画質デジタル撮影による精密な診断</li>
+                                        <li>被曝量の大幅減少で患者様に優しい</li>
+                                        <li>デジタルデータ保存で経過観察に活用</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.12.10</div>
+                            <div class="news-item__category">キャンペーン</div>
+                            <h3 class="news-item__title">歯周病予防キャンペーンを実施中です</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">歯周病の早期発見と予防のために。</p>
+                                <div class="news-detail">
+                                    <p>40歳以上の方の80%以上が歯周病に罹患していると言われています。症状が出る前からの予防と早期治療が重要です。</p>
+                                    <h4>歯周病予防のメリット</h4>
+                                    <ul>
+                                        <li>歯を失うリスクの減少</li>
+                                        <li>口臭の改善</li>
+                                        <li>全身の健康維持</li>
+                                    </ul>
+                                    <p>検査期間：2025年12月～2025年3月まで（特別料金で精密検査を実施）</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.12.01</div>
+                            <div class="news-item__category">お知らせ</div>
+                            <h3 class="news-item__title">ホワイトニングキャンペーンを実施中です</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">美しい白い歯で新年を迎えませんか。</p>
+                                <div class="news-detail">
+                                    <h4>キャンペーン期間</h4>
+                                    <p>2025年12月1日～2025年1月31日</p>
+                                    <h4>キャンペーン料金</h4>
+                                    <ul>
+                                        <li>オフィスホワイトニング：通常価30,000円→キャンペーン価25,000円</li>
+                                        <li>ホームホワイトニング：通常価15,000円→キャンペーン価12,000円</li>
+                                        <li>初回相談・カウンセリング無料</li>
+                                    </ul>
+                                    <h4>予約方法</h4>
+                                    <p>お電話にてご予約をお取りください。ご相談のみでもお気軽にどうぞ。</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.11.25</div>
+                            <div class="news-item__category">お知らせ</div>
+                            <h3 class="news-item__title">オンライン予約システムの導入について</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">24時間いつでも予約が可能になります。</p>
+                                <div class="news-detail">
+                                    <p>患者様の利便性向上のため、2025年1月よりオンライン予約システムを導入予定です。</p>
+                                    <h4>システムの特徴</h4>
+                                    <ul>
+                                        <li>24時間予約受付</li>
+                                        <li>予約変更・キャンセルが簡単</li>
+                                        <li>待ち時間の目安をお知らせ</li>
+                                        <li>診察券番号での簡単ログイン</li>
+                                    </ul>
+                                    <p>詳細については、決定次第改めてお知らせいたします。</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.11.15</div>
+                            <div class="news-item__category">診療</div>
+                            <h3 class="news-item__title">インプラント専門外来を開設いたします</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">歯を失った方の高度な復旧治療を開始します。</p>
+                                <div class="news-detail">
+                                    <p>2025年12月より、インプラント専門外来を開設いたします。</p>
+                                    <h4>診療日時</h4>
+                                    <p>毎週木曜日 14:00-17:00（完全予約制）</p>
+                                    <h4>対象患者</h4>
+                                    <ul>
+                                        <li>歯を失った方</li>
+                                        <li>入れ歯が合わない方</li>
+                                        <li>更に機能的な歯を求める方</li>
+                                        <li>長期的な解決をお望みの方</li>
+                                    </ul>
+                                    <p>CT検査から手術、メンテナンスまで、一貫したサポートをいたします。</p>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="news-item">
+                            <div class="news-item__date">2025.11.01</div>
+                            <div class="news-item__category">お知らせ</div>
+                            <h3 class="news-item__title">秋の健康診断のお知らせ</h3>
+                            <div class="news-item__content">
+                                <p class="news-item__excerpt">企業健診・個人健診を承っております。</p>
+                                <div class="news-detail">
+                                    <p>当院では各種健康診断を実施しております。</p>
+                                    <h4>実施可能な健診</h4>
+                                    <ul>
+                                        <li>雇用時健康診断（歯科検診）</li>
+                                        <li>定期健康診断（歯科検診）</li>
+                                        <li>歯科人間ドック</li>
+                                        <li>口腔がん検診</li>
+                                    </ul>
+                                    <h4>予約方法</h4>
+                                    <p>事前予約制となっております。お電話にてお申し込みください。</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination" style="display: flex; justify-content: center; align-items: center; gap: var(--spacing-sm); margin: var(--spacing-xxl) 0;">
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">←</a>
+                        <a href="#" class="pagination__btn pagination__btn--active" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--gradient-accent); color: white; text-decoration: none; font-weight: 600; box-shadow: var(--shadow-soft); border: 2px solid transparent;">1</a>
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">2</a>
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">3</a>
+                        <span style="color: var(--text-light); padding: 0 var(--spacing-sm);">…</span>
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">10</a>
+                        <a href="#" class="pagination__btn" style="display: flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--bg-secondary); color: var(--text-secondary); text-decoration: none; font-weight: 500; transition: var(--transition-fast); border: 2px solid transparent;">→</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <img src="images/Dental clinic Logo_4.png" alt="奥田歯科クリニック" class="footer__logo" style="height: 80px; margin-bottom: 20px;">
+                    <div class="footer__contact">
+                        <p>〒100-8111 東京都千代田区千代田1-1</p>
+                        <p>TEL: 03-1234-5678</p>
+                        <p>JR東京駅 徒歩5分</p>
+                    </div>
+                </div>
+                
+                <div class="footer__hours">
+                    <h4>診療時間</h4>
+                    <div class="footer-schedule-table-wrapper">
+                        <table class="footer-schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>診療時間</th>
+                                    <th>月</th>
+                                    <th>火</th>
+                                    <th>水</th>
+                                    <th>木</th>
+                                    <th>金</th>
+                                    <th>土</th>
+                                    <th>日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-label">09:00-12:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot special">▲</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-label">14:00-17:00</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot">○</td>
+                                    <td class="time-slot closed">/</td>
+                                    <td class="time-slot closed">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 奥田歯科クリニック. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

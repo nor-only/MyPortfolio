@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物件情報 | 奥田不動産 - 東京都の厳選おすすめ物件</title>
+    <meta name="description" content="奥田不動産の物件情報一覧。東京都内の賃貸・売買物件、投資用物件まで、プロの目利きで選定した価値ある物件をご紹介。">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- ヘッダー -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="images/realestate_logo.svg" alt="奥田不動産">
+                    <h1>奥田不動産</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="services.html">サービス</a></li>
+                    <li><a href="properties.html">物件情報</a></li>
+                    <li><a href="testimonials.html">お客様の声</a></li>
+                    <li><a href="contact.html" class="nav-contact-btn">お問い合わせ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text-content">
+                    <h1>厳選<br><span class="highlight">おすすめ物件</span><br>情報</h1>
+                    <p class="hero-subtitle">プロの目利きで選定した、価値ある物件をご紹介。立地、設備、価格すべてにこだわった優良物件から、お客様のライフスタイルに最適な住まいをお選びいただけます。</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5,000+</span>
+                            <span class="stat-label">取扱物件数</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">23区</span>
+                            <span class="stat-label">対応エリア</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24時間</span>
+                            <span class="stat-label">以内紹介</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="images/house/modern-residential-building-in-warsaw-poland-cit-2025-03-13-13-36-14-utc.jpg" alt="東京のモダンなマンション">
+                </div>
+            </div>
+        </section>
+
+        <!-- 検索フィルターセクション -->
+        <section class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Search</div>
+                    <h2 class="section-title">物件検索</h2>
+                    <p class="section-description">ご希望の条件から理想の物件をお探しいただけます。</p>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="search-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="property-type">物件種別</label>
+                                <select id="property-type" name="property-type">
+                                    <option value="">すべて</option>
+                                    <option value="rent">賃貸</option>
+                                    <option value="sale">売買</option>
+                                    <option value="investment">投資用</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="area">エリア</label>
+                                <select id="area" name="area">
+                                    <option value="">すべて</option>
+                                    <option value="chiyoda">千代田区</option>
+                                    <option value="chuo">中央区</option>
+                                    <option value="minato">港区</option>
+                                    <option value="shinjuku">新宿区</option>
+                                    <option value="shibuya">渋谷区</option>
+                                    <option value="shinagawa">品川区</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="price-min">価格帯（下限）</label>
+                                <select id="price-min" name="price-min">
+                                    <option value="">指定なし</option>
+                                    <option value="50000">5万円</option>
+                                    <option value="100000">10万円</option>
+                                    <option value="150000">15万円</option>
+                                    <option value="200000">20万円</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="price-max">価格帯（上限）</label>
+                                <select id="price-max" name="price-max">
+                                    <option value="">指定なし</option>
+                                    <option value="100000">10万円</option>
+                                    <option value="150000">15万円</option>
+                                    <option value="200000">20万円</option>
+                                    <option value="300000">30万円</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="cta-button">検索する</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 物件一覧セクション -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Featured Properties</div>
+                    <h2 class="section-title">おすすめ物件一覧</h2>
+                    <p class="section-description">特におすすめの優良物件をピックアップしてご紹介いたします。</p>
+                </div>
+                
+                <div class="properties-grid" id="properties-container">
+                    <!-- First 6 properties (visible) -->
+                    <div class="property-card">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/modern-apartment-house-in-berlin-2025-03-08-07-46-04-utc.jpg') center/cover;">
+                            <div class="property-status">募集中</div>
+                            <div class="property-price">8.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">モダンアパート*棟</h3>
+                            <p class="property-location">📍 千代田区丸の内*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 65㎡</div>
+                                <div class="feature">🚶 駅徒歩5分</div>
+                                <div class="feature">🅿️ 駐車場込</div>
+                            </div>
+                            <div class="property-description">
+                                <p>東京駅徒歩5分の好立地マンション。オートロック、宅配ボックス完備で安心・便利。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/facade-of-luxurious-house-in-beige-stone-with-fron-2024-10-18-17-35-56-utc.jpg') center/cover;">
+                            <div class="property-status">新築</div>
+                            <div class="property-price">12万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ラグジュアリーハウス*棟</h3>
+                            <p class="property-location">📍 港区南青山*-**-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 85㎡</div>
+                                <div class="feature">🌳 青山公園側</div>
+                                <div class="feature">🅿️ 2台分</div>
+                            </div>
+                            <div class="property-description">
+                                <p>青山公園を一望できる新築マンション。高級感あふれる内装と最新設備を完備。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/modern-house-exterior-2024-09-22-02-59-30-utc.jpg') center/cover;">
+                            <div class="property-status">人気</div>
+                            <div class="property-price">6.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">シティマンション*棟</h3>
+                            <p class="property-location">📍 渋谷区恵比寿南*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 1LDK</div>
+                                <div class="feature">📐 45㎡</div>
+                                <div class="feature">🚇 恵比寿駅3分</div>
+                                <div class="feature">🛒 商業施設隣接</div>
+                            </div>
+                            <div class="property-description">
+                                <p>恵比寿駅徒歩3分の好立地。商業施設が隣接しており、生活に大変便利な立地です。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/outdoor-swimming-pool-bordered-by-rows-of-cedar-tr-2024-10-18-08-42-52-utc.jpg') center/cover;">
+                            <div class="property-status">売買</div>
+                            <div class="property-price">8,500万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">プレミアムハイツ*棟</h3>
+                            <p class="property-location">📍 港区六本木*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 4LDK</div>
+                                <div class="feature">📐 105㎡</div>
+                                <div class="feature">🏢 最上階</div>
+                                <div class="feature">🏙️ 東京夜景</div>
+                            </div>
+                            <div class="property-description">
+                                <p>六本木ヒルズを一望できる最上階の高級マンション。東京の夜景を楽しめます。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+                    
+                    <div class="property-card">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/window-of-blue-house-2025-02-21-10-52-08-utc.jpg') center/cover;">
+                            <div class="property-status">投資向け</div>
+                            <div class="property-price">4,800万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">インベストメントビル*棟</h3>
+                            <p class="property-location">📍 新宿区西新宿*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 1K×6戸</div>
+                                <div class="feature">📊 利回り8.2%</div>
+                                <div class="feature">🏢 新宿駅5分</div>
+                                <div class="feature">💯 満室稼働中</div>
+                            </div>
+                            <div class="property-description">
+                                <p>新宿駅徒歩5分の投資用マンション。高い利回りと安定した稼働率を実現しています。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/big-beautiful-house-2025-03-07-11-42-58-utc.jpg') center/cover;">
+                            <div class="property-status">新着</div>
+                            <div class="property-price">15万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ビューティフルハウス*棟</h3>
+                            <p class="property-location">📍 品川区港南*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 70㎡</div>
+                                <div class="feature">🚄 品川駅2分</div>
+                                <div class="feature">🏢 タワー20階</div>
+                            </div>
+                            <div class="property-description">
+                                <p>品川駅徒歩2分のタワーマンション。コンシェルジュサービス、フィットネス完備。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <!-- Hidden properties (7-12) -->
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/53890-green-lawn-in-front-of-country-house-2025-04-03-23-28-40-utc.jpg') center/cover;">
+                            <div class="property-status">新着</div>
+                            <div class="property-price">9.2万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">グリーンガーデン*棟</h3>
+                            <p class="property-location">📍 中央区日本橋*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 58㎡</div>
+                                <div class="feature">🚇 日本橋駅2分</div>
+                                <div class="feature">🌳 芝生庭園</div>
+                            </div>
+                            <div class="property-description">
+                                <p>日本橋駅至近の庭園付き住宅。美しい芝生の庭で自然を感じながら生活できます。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/beautiful-facade-of-house-2025-02-10-09-32-50-utc.jpg') center/cover;">
+                            <div class="property-status">おすすめ</div>
+                            <div class="property-price">11.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">エレガントハウス*棟</h3>
+                            <p class="property-location">📍 世田谷区三軒茶屋*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 62㎡</div>
+                                <div class="feature">🚉 三軒茶屋駅4分</div>
+                                <div class="feature">🏛️ 美しい外観</div>
+                            </div>
+                            <div class="property-description">
+                                <p>三軒茶屋の美しい外観が特徴的な住宅。洗練されたデザインで住み心地も抜群です。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/elegant-villa-terrace-with-garden-furniture-2024-10-18-17-34-58-utc.jpg') center/cover;">
+                            <div class="property-status">築浅</div>
+                            <div class="property-price">7.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ヴィラテラス*棟</h3>
+                            <p class="property-location">📍 杉並区荻窪*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 1LDK</div>
+                                <div class="feature">📐 42㎡</div>
+                                <div class="feature">🚇 荻窪駅6分</div>
+                                <div class="feature">🌿 テラス付き</div>
+                            </div>
+                            <div class="property-description">
+                                <p>荻窪駅徒歩6分のテラス付きヴィラ。優雅な庭園で寛げる贅沢な住空間です。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/modern-house-with-garden-swimming-pool-and-wooden-2024-10-18-04-34-03-utc.jpg') center/cover;">
+                            <div class="property-status">駅近</div>
+                            <div class="property-price">13.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ガーデンプール*棟</h3>
+                            <p class="property-location">📍 豊島区池袋*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 75㎡</div>
+                                <div class="feature">🚇 池袋駅1分</div>
+                                <div class="feature">🏊 プール付き</div>
+                            </div>
+                            <div class="property-description">
+                                <p>池袋駅徒歩1分のプール付き住宅。庭園とプールで贅沢なライフスタイルを。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/large-house-on-estate-2025-04-03-12-55-53-utc.jpg') center/cover;">
+                            <div class="property-status">売買</div>
+                            <div class="property-price">6,800万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">エステートハウス*棟</h3>
+                            <p class="property-location">📍 練馬区石神井公園*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 88㎡</div>
+                                <div class="feature">🌳 公園隣接</div>
+                                <div class="feature">🏘️ 大型邸宅</div>
+                            </div>
+                            <div class="property-description">
+                                <p>石神井公園隣接の大型邸宅。広大な敷地で快適なファミリーライフを実現。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/modern-residential-building-in-warsaw-poland-cit-2025-03-13-13-36-14-utc.jpg') center/cover;">
+                            <div class="property-status">投資向け</div>
+                            <div class="property-price">5,200万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">レジデンシャルビル*棟</h3>
+                            <p class="property-location">📍 台東区上野*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 1R×8戸</div>
+                                <div class="feature">📊 利回り7.8%</div>
+                                <div class="feature">🚇 上野駅3分</div>
+                                <div class="feature">🏢 モダン建築</div>
+                            </div>
+                            <div class="property-description">
+                                <p>上野駅至近のモダン住宅建築。都市型住居として人気が高い投資物件です。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <!-- Hidden properties (13-18) -->
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/new-modern-and-luxury-home-with-windows-and-doors-2024-11-18-03-31-21-utc.jpg') center/cover;">
+                            <div class="property-status">高級</div>
+                            <div class="property-price">18.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ラグジュアリーハウス*棟</h3>
+                            <p class="property-location">📍 目黒区自由が丘*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 4LDK</div>
+                                <div class="feature">📐 120㎡</div>
+                                <div class="feature">🚇 自由が丘駅3分</div>
+                                <div class="feature">✨ 高級仕様</div>
+                            </div>
+                            <div class="property-description">
+                                <p>自由が丘駅徒歩3分の高級住宅。最新設備と洗練されたデザインが魅力です。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/house-with-swimming-pool-outdoors-in-backyard-gard-2024-10-18-17-42-16-utc.jpg') center/cover;">
+                            <div class="property-status">プール付き</div>
+                            <div class="property-price">22万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">プールサイドハウス*棟</h3>
+                            <p class="property-location">📍 世田谷区成城*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 5LDK</div>
+                                <div class="feature">📐 150㎡</div>
+                                <div class="feature">🏊 専用プール</div>
+                                <div class="feature">🌳 大型庭園</div>
+                            </div>
+                            <div class="property-description">
+                                <p>成城の専用プール付き大型住宅。贅沢な庭園でリゾート気分を味わえます。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/mediterranean-villa-interior-and-exterior-design-2024-09-13-23-33-47-utc.jpg') center/cover;">
+                            <div class="property-status">デザイナーズ</div>
+                            <div class="property-price">16.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">メディテラニアンヴィラ*棟</h3>
+                            <p class="property-location">📍 渋谷区代官山*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 95㎡</div>
+                                <div class="feature">🎨 デザイナーズ</div>
+                                <div class="feature">🌊 地中海風</div>
+                            </div>
+                            <div class="property-description">
+                                <p>代官山の地中海風デザイナーズ住宅。洗練された内外装で特別な住み心地を。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/view-of-luxurious-modern-house-with-decorative-ele-2025-03-15-04-36-36-utc.JPG') center/cover;">
+                            <div class="property-status">新築</div>
+                            <div class="property-price">19.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">モダンデコラティブ*棟</h3>
+                            <p class="property-location">📍 港区白金台*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 4LDK</div>
+                                <div class="feature">📐 110㎡</div>
+                                <div class="feature">🎯 白金台</div>
+                                <div class="feature">🏛️ 装飾的要素</div>
+                            </div>
+                            <div class="property-description">
+                                <p>白金台の装飾的要素が美しいモダン住宅。高級エリアならではの品格があります。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/front-elevation-of-beautiful-home-lit-up-at-twilig-2024-12-06-03-48-31-utc.jpg') center/cover;">
+                            <div class="property-status">夜景美</div>
+                            <div class="property-price">14.2万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">トワイライトハウス*棟</h3>
+                            <p class="property-location">📍 文京区本郷*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 68㎡</div>
+                                <div class="feature">🌅 美しい夕景</div>
+                                <div class="feature">💡 外観照明</div>
+                            </div>
+                            <div class="property-description">
+                                <p>本郷の夕暮れ時に美しく照らされる住宅。外観照明が幻想的な雰囲気を演出。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/modern-white-apartment-house-with-metal-balconies-2025-03-08-09-08-38-utc.jpg') center/cover;">
+                            <div class="property-status">バルコニー</div>
+                            <div class="property-price">12.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ホワイトバルコニー*棟</h3>
+                            <p class="property-location">📍 品川区大井町*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 78㎡</div>
+                                <div class="feature">🏗️ メタルバルコニー</div>
+                                <div class="feature">⚪ ホワイト外観</div>
+                            </div>
+                            <div class="property-description">
+                                <p>大井町のメタルバルコニー付きホワイト住宅。モダンなデザインが印象的です。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <!-- Continue with more hidden properties... (19-50) -->
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/timber-colorful-house-in-the-countryside-of-chile-2025-03-27-02-28-19-utc.jpg') center/cover;">
+                            <div class="property-status">カラフル</div>
+                            <div class="property-price">9.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ティンバーハウス*棟</h3>
+                            <p class="property-location">📍 杉並区井荻*-**-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 55㎡</div>
+                                <div class="feature">🌈 カラフル外観</div>
+                                <div class="feature">🌲 木材使用</div>
+                            </div>
+                            <div class="property-description">
+                                <p>井荻のカラフルな木材住宅。個性的なデザインで心豊かな暮らしを。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/red-brick-house-with-terrace-and-green-grass-and-t-2024-10-22-06-46-03-utc.jpg') center/cover;">
+                            <div class="property-status">レンガ造り</div>
+                            <div class="property-price">13.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">レッドブリック*棟</h3>
+                            <p class="property-location">📍 世田谷区等々力*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 85㎡</div>
+                                <div class="feature">🧱 レンガ外壁</div>
+                                <div class="feature">🌿 テラス庭園</div>
+                            </div>
+                            <div class="property-description">
+                                <p>等々力のレンガ造りテラス付き住宅。緑豊かな庭園で安らぎの時間を。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/wooden-hotel-in-carpathian-mountains-2025-01-09-01-24-01-utc.jpg') center/cover;">
+                            <div class="property-status">木造</div>
+                            <div class="property-price">11.2万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ウッドマウンテン*棟</h3>
+                            <p class="property-location">📍 八王子市高尾町*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 65㎡</div>
+                                <div class="feature">🌲 木造建築</div>
+                                <div class="feature">🏔️ 山の景色</div>
+                            </div>
+                            <div class="property-description">
+                                <p>高尾の木造山荘風住宅。自然に囲まれた環境で心身ともにリフレッシュ。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/traditional-houses-in-the-narrow-streets-of-mykono-2025-02-12-00-15-48-utc.jpg') center/cover;">
+                            <div class="property-status">伝統的</div>
+                            <div class="property-price">8.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">トラディショナルハウス*棟</h3>
+                            <p class="property-location">📍 台東区谷中*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 1LDK</div>
+                                <div class="feature">📐 48㎡</div>
+                                <div class="feature">🏛️ 伝統建築</div>
+                                <div class="feature">🎌 和の趣</div>
+                            </div>
+                            <div class="property-description">
+                                <p>谷中の伝統的な建築様式を取り入れた住宅。日本の美を感じる住空間。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/turquoise-sea-blue-sky-and-white-house-in-portuga-2024-12-16-05-04-00-utc.jpg') center/cover;">
+                            <div class="property-status">海風</div>
+                            <div class="property-price">10.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ターコイズブルー*棟</h3>
+                            <p class="property-location">📍 品川区東品川*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 60㎡</div>
+                                <div class="feature">🌊 海を感じる</div>
+                                <div class="feature">🏝️ リゾート風</div>
+                            </div>
+                            <div class="property-description">
+                                <p>東品川のリゾート風住宅。ターコイズブルーの空と海を感じる爽やかな住まい。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/small-new-build-house-2024-10-11-07-51-03-utc.jpg') center/cover;">
+                            <div class="property-status">新築</div>
+                            <div class="property-price">7.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">スモールニュー*棟</h3>
+                            <p class="property-location">📍 足立区綾瀬*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 1LDK</div>
+                                <div class="feature">📐 40㎡</div>
+                                <div class="feature">🆕 新築</div>
+                                <div class="feature">💰 リーズナブル</div>
+                            </div>
+                            <div class="property-description">
+                                <p>綾瀬の新築小型住宅。コンパクトながら機能的で、初めての一人暮らしに最適。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/newly-build-houses-with-solar-panels-attached-on-r-2025-01-07-04-16-20-utc.jpg') center/cover;">
+                            <div class="property-status">エコ</div>
+                            <div class="property-price">14.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ソーラーエコ*棟</h3>
+                            <p class="property-location">📍 練馬区光が丘*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 80㎡</div>
+                                <div class="feature">☀️ ソーラーパネル</div>
+                                <div class="feature">🌱 エコ住宅</div>
+                            </div>
+                            <div class="property-description">
+                                <p>光が丘のソーラーパネル付きエコ住宅。環境に優しく光熱費も削減できます。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/one-storey-wooden-summerhouse-with-attic-in-russia-2024-10-18-06-21-57-utc.jpg') center/cover;">
+                            <div class="property-status">平屋</div>
+                            <div class="property-price">9.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ワンストーリー*棟</h3>
+                            <p class="property-location">📍 調布市深大寺*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 58㎡</div>
+                                <div class="feature">🏘️ 平屋建て</div>
+                                <div class="feature">🌲 木造構造</div>
+                            </div>
+                            <div class="property-description">
+                                <p>調布の木造平屋住宅。階段のない生活で、バリアフリーで快適な住環境。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/the-courtyard-of-the-house-in-a-minimalist-style-2025-02-10-01-31-52-utc.jpg') center/cover;">
+                            <div class="property-status">ミニマル</div>
+                            <div class="property-price">15.2万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ミニマルコート*棟</h3>
+                            <p class="property-location">📍 目黒区中目黒*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 72㎡</div>
+                                <div class="feature">🎯 中庭付き</div>
+                                <div class="feature">✨ ミニマル</div>
+                            </div>
+                            <div class="property-description">
+                                <p>中目黒のミニマルスタイル中庭付き住宅。シンプルで洗練された空間デザイン。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/flowers-and-trees-in-the-garden-of-white-house-wit-2024-10-18-08-59-40-utc.jpg') center/cover;">
+                            <div class="property-status">ガーデン</div>
+                            <div class="property-price">12.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">フラワーガーデン*棟</h3>
+                            <p class="property-location">📍 世田谷区二子玉川*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 88㎡</div>
+                                <div class="feature">🌸 花庭園付き</div>
+                                <div class="feature">🌳 樹木豊富</div>
+                            </div>
+                            <div class="property-description">
+                                <p>二子玉川の花と樹木に囲まれた住宅。四季折々の自然を楽しめる庭園付き。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/view-of-new-modern-house-with-swimming-pool-and-gr-2024-11-17-07-04-51-utc.jpg') center/cover;">
+                            <div class="property-status">プール庭園</div>
+                            <div class="property-price">25万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ニューモダンプール*棟</h3>
+                            <p class="property-location">📍 世田谷区田園調布*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 5LDK</div>
+                                <div class="feature">📐 180㎡</div>
+                                <div class="feature">🏊 大型プール</div>
+                                <div class="feature">🌿 庭園設計</div>
+                            </div>
+                            <div class="property-description">
+                                <p>田園調布の大型プール付きモダン住宅。贅沢な庭園で極上のライフスタイルを。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/large-house-with-swimming-pool-and-trees-in-sunny-2025-04-05-00-10-11-utc.jpg') center/cover;">
+                            <div class="property-status">大型邸宅</div>
+                            <div class="property-price">35万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ラージエステート*棟</h3>
+                            <p class="property-location">📍 世田谷区成城学園前*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 6LDK</div>
+                                <div class="feature">📐 250㎡</div>
+                                <div class="feature">🏊 大型プール</div>
+                                <div class="feature">🌳 森林庭園</div>
+                            </div>
+                            <div class="property-description">
+                                <p>成城の大型邸宅。プールと森林庭園を備えた究極の住環境を提供します。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/modern-concrete-building-with-green-yard-under-clo-2024-11-17-21-27-06-utc.jpg') center/cover;">
+                            <div class="property-status">コンクリート</div>
+                            <div class="property-price">13.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">コンクリートグリーン*棟</h3>
+                            <p class="property-location">📍 渋谷区恵比寿西*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 70㎡</div>
+                                <div class="feature">🏗️ RC構造</div>
+                                <div class="feature">🌿 緑地庭園</div>
+                            </div>
+                            <div class="property-description">
+                                <p>恵比寿のコンクリート造緑地庭園付き住宅。モダンな建築と自然が調和。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/design-architecture-and-building-concept-the-en-2025-02-25-06-53-45-utc.jpg') center/cover;">
+                            <div class="property-status">建築デザイン</div>
+                            <div class="property-price">17.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">アーキテクチャコンセプト*棟</h3>
+                            <p class="property-location">📍 港区表参道*-**-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 95㎡</div>
+                                <div class="feature">🎨 建築芸術</div>
+                                <div class="feature">💡 コンセプト</div>
+                            </div>
+                            <div class="property-description">
+                                <p>表参道の建築芸術コンセプト住宅。デザインと機能性を高次元で融合。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/new-comfortable-two-storied-cottage-with-steep-shi-2024-12-06-00-39-44-utc.jpg') center/cover;">
+                            <div class="property-status">コテージ</div>
+                            <div class="property-price">11.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ツーストーリーコテージ*棟</h3>
+                            <p class="property-location">📍 国分寺市本町*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 75㎡</div>
+                                <div class="feature">🏔️ 急勾配屋根</div>
+                                <div class="feature">🏡 コテージ風</div>
+                            </div>
+                            <div class="property-description">
+                                <p>国分寺の2階建てコテージ風住宅。急勾配屋根が特徴的な可愛らしいデザイン。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/facade-of-green-mansion-in-moscow-city-2024-10-17-07-25-29-utc.jpg') center/cover;">
+                            <div class="property-status">グリーン</div>
+                            <div class="property-price">16.2万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">グリーンマンション*棟</h3>
+                            <p class="property-location">📍 新宿区市谷左内町*-*-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 4LDK</div>
+                                <div class="feature">📐 105㎡</div>
+                                <div class="feature">🌿 緑の外観</div>
+                                <div class="feature">🏛️ マンション</div>
+                            </div>
+                            <div class="property-description">
+                                <p>市谷の緑の外観が美しいマンション。自然との調和を重視した都市型住宅。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/balconies-in-a-new-glass-wall-apartment-house-2024-12-16-05-42-48-utc.jpg') center/cover;">
+                            <div class="property-status">ガラス壁</div>
+                            <div class="property-price">18.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">グラスウォール*棟</h3>
+                            <p class="property-location">📍 港区六本木*-**-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 90㎡</div>
+                                <div class="feature">🪟 ガラス壁面</div>
+                                <div class="feature">🏗️ バルコニー</div>
+                            </div>
+                            <div class="property-description">
+                                <p>六本木のガラス壁面アパート。開放感あふれるバルコニーで都市の景色を堪能。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/this-day-is-too-beautiful-to-spend-it-inside-2024-10-18-09-11-30-utc.jpg') center/cover;">
+                            <div class="property-status">アウトドア</div>
+                            <div class="property-price">14.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">アウトドアライフ*棟</h3>
+                            <p class="property-location">📍 多摩市聖ヶ丘*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 68㎡</div>
+                                <div class="feature">🏞️ 自然環境</div>
+                                <div class="feature">🌞 屋外重視</div>
+                            </div>
+                            <div class="property-description">
+                                <p>多摩の自然環境を活かしたアウトドア重視住宅。屋外活動を楽しむ方に最適。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/view-of-a-two-storey-house-2025-02-10-07-55-42-utc.jpg') center/cover;">
+                            <div class="property-status">2階建て</div>
+                            <div class="property-price">12.2万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ツーストーリービュー*棟</h3>
+                            <p class="property-location">📍 立川市柴崎町*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 4LDK</div>
+                                <div class="feature">📐 100㎡</div>
+                                <div class="feature">🏢 2階建て</div>
+                                <div class="feature">👁️ 景色良好</div>
+                            </div>
+                            <div class="property-description">
+                                <p>立川の2階建て住宅。2階からの眺望が素晴らしく、開放感のある住環境。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/neat-patio-with-sitting-area-2025-02-10-10-56-39-utc.jpg') center/cover;">
+                            <div class="property-status">パティオ</div>
+                            <div class="property-price">13.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ニートパティオ*棟</h3>
+                            <p class="property-location">📍 武蔵野市吉祥寺本町*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 75㎡</div>
+                                <div class="feature">🪑 パティオ</div>
+                                <div class="feature">☕ シッティングエリア</div>
+                            </div>
+                            <div class="property-description">
+                                <p>吉祥寺のパティオ付き住宅。整然としたシッティングエリアで憩いの時間を。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/house-made-of-travertine-2024-10-18-09-45-44-utc.jpg') center/cover;">
+                            <div class="property-status">トラバーチン</div>
+                            <div class="property-price">16.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">トラバーチンハウス*棟</h3>
+                            <p class="property-location">📍 世田谷区奥沢*-**-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 85㎡</div>
+                                <div class="feature">🏛️ 石材外壁</div>
+                                <div class="feature">✨ 高級素材</div>
+                            </div>
+                            <div class="property-description">
+                                <p>奥沢のトラバーチン石材を使用した高級住宅。上質な素材感が魅力の住まい。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/modern-residential-construction-in-berlin-2025-03-05-01-29-47-utc.jpg') center/cover;">
+                            <div class="property-status">最新建築</div>
+                            <div class="property-price">19.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">モダンコンストラクション*棟</h3>
+                            <p class="property-location">📍 港区赤坂*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 4LDK</div>
+                                <div class="feature">📐 110㎡</div>
+                                <div class="feature">🏗️ 最新工法</div>
+                                <div class="feature">🔬 先進技術</div>
+                            </div>
+                            <div class="property-description">
+                                <p>赤坂の最新建築技術を使用した住宅。先進的な工法で快適性と安全性を実現。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/remodeled-older-style-home-exterior-2025-04-05-11-18-19-utc.jpg') center/cover;">
+                            <div class="property-status">リモデル</div>
+                            <div class="property-price">10.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">リモデルクラシック*棟</h3>
+                            <p class="property-location">📍 文京区根津*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 65㎡</div>
+                                <div class="feature">🔄 リモデル済み</div>
+                                <div class="feature">🏛️ クラシック</div>
+                            </div>
+                            <div class="property-description">
+                                <p>根津のリモデル済みクラシック住宅。伝統的な外観と現代的な住環境を両立。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/unrecognizable-part-of-residential-house-2024-12-16-04-58-30-utc.jpg') center/cover;">
+                            <div class="property-status">モダン</div>
+                            <div class="property-price">11.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">レジデンシャルモダン*棟</h3>
+                            <p class="property-location">📍 大田区蒲田*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 60㎡</div>
+                                <div class="feature">🏢 住宅建築</div>
+                                <div class="feature">⚫ モダン外観</div>
+                            </div>
+                            <div class="property-description">
+                                <p>蒲田のモダン住宅建築。シンプルで機能的な外観デザインが特徴的です。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/exterior-of-modern-comfortable-cottage-or-house-wi-2025-03-13-23-17-15-utc.JPG') center/cover;">
+                            <div class="property-status">コンフォート</div>
+                            <div class="property-price">12.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">コンフォートコテージ*棟</h3>
+                            <p class="property-location">📍 町田市成瀬台2-12-15</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 78㎡</div>
+                                <div class="feature">😌 快適設計</div>
+                                <div class="feature">🏡 コテージ風</div>
+                            </div>
+                            <div class="property-description">
+                                <p>町田の快適設計コテージ風住宅。居住性を重視した住み心地の良い住まい。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/modern-apartment-houses-in-berlin-2025-03-08-04-27-23-utc.jpg') center/cover;">
+                            <div class="property-status">アパートハウス</div>
+                            <div class="property-price">9.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">モダンアパートハウス*棟</h3>
+                            <p class="property-location">📍 板橋区大山町*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 1LDK</div>
+                                <div class="feature">📐 45㎡</div>
+                                <div class="feature">🏢 アパート型</div>
+                                <div class="feature">🆕 モダン</div>
+                            </div>
+                            <div class="property-description">
+                                <p>板橋のモダンアパートハウス。都市型住居として機能性と快適性を追求。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/august-17-2017-nida-lithuania-old-lithuanian-tr-2025-03-31-13-53-42-utc.jpg') center/cover;">
+                            <div class="property-status">伝統建築</div>
+                            <div class="property-price">8.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">オールドトラディショナルS*棟</h3>
+                            <p class="property-location">📍 北区王子本町*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 55㎡</div>
+                                <div class="feature">🏛️ 伝統様式</div>
+                                <div class="feature">📿 歴史的</div>
+                            </div>
+                            <div class="property-description">
+                                <p>王子の伝統的建築様式住宅。歴史を感じさせる趣深い外観と内装が特徴。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/august-17-2017-pervalka-village-lithuania-old-l-2025-03-26-01-33-53-utc.jpg') center/cover;">
+                            <div class="property-status">ビレッジ風</div>
+                            <div class="property-price">7.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">オールドビレッジT*棟</h3>
+                            <p class="property-location">📍 東久留米市本町*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 1LDK</div>
+                                <div class="feature">📐 42㎡</div>
+                                <div class="feature">🏘️ 村落風</div>
+                                <div class="feature">🌾 田舎風情</div>
+                            </div>
+                            <div class="property-description">
+                                <p>東久留米の村落風住宅。田舎の風情を感じられる穏やかな住環境です。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/exterior-shot-of-a-shower-whose-walls-are-coated-o-2025-01-10-04-10-19-utc.jpg') center/cover;">
+                            <div class="property-status">特殊外壁</div>
+                            <div class="property-price">13.2万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">スペシャルコーティングU*棟</h3>
+                            <p class="property-location">📍 小金井市本町*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 65㎡</div>
+                                <div class="feature">🎨 特殊塗装</div>
+                                <div class="feature">💧 防水性能</div>
+                            </div>
+                            <div class="property-description">
+                                <p>小金井の特殊外壁コーティング住宅。防水性能に優れた先進的な外装技術。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/exteriors-view-of-a-modern-villa-in-the-foreground-2025-01-09-02-24-14-utc.jpg') center/cover;">
+                            <div class="property-status">ヴィラ</div>
+                            <div class="property-price">21.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">モダンヴィラエクステリアV*棟</h3>
+                            <p class="property-location">📍 世田谷区用賀*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 4LDK</div>
+                                <div class="feature">📐 130㎡</div>
+                                <div class="feature">🏖️ ヴィラ風</div>
+                                <div class="feature">🌅 前庭付き</div>
+                            </div>
+                            <div class="property-description">
+                                <p>用賀のモダンヴィラ。前庭を備えた開放的な外観デザインで贅沢な住環境。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/exteriorsview-of-a-modern-villa-2025-01-09-04-05-36-utc.jpg') center/cover;">
+                            <div class="property-status">ヴィラビュー</div>
+                            <div class="property-price">20.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">エクステリアヴィラビューW*棟</h3>
+                            <p class="property-location">📍 世田谷区桜新町*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 4LDK</div>
+                                <div class="feature">📐 125㎡</div>
+                                <div class="feature">👁️ 眺望良好</div>
+                                <div class="feature">🏖️ ヴィラ仕様</div>
+                            </div>
+                            <div class="property-description">
+                                <p>桜新町のヴィラ仕様住宅。外観からの眺望が美しく、開放感あふれる住まい。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/facade-2024-09-18-19-35-03-utc.jpg') center/cover;">
+                            <div class="property-status">ファサード</div>
+                            <div class="property-price">14.8万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">ビューティフルファサードX*棟</h3>
+                            <p class="property-location">📍 中野区中野5-18-12</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 82㎡</div>
+                                <div class="feature">🎭 美しい正面</div>
+                                <div class="feature">🏛️ 建築美</div>
+                            </div>
+                            <div class="property-description">
+                                <p>中野の美しいファサードデザイン住宅。建築美を追求した印象的な正面外観。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/facade-2024-09-22-10-15-23-utc.jpg') center/cover;">
+                            <div class="property-status">モダンファサード</div>
+                            <div class="property-price">15.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">モダンファサードY*棟</h3>
+                            <p class="property-location">📍 杉並区阿佐ヶ谷南*-*-**</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 3LDK</div>
+                                <div class="feature">📐 88㎡</div>
+                                <div class="feature">🆕 現代的正面</div>
+                                <div class="feature">🏗️ モダン建築</div>
+                            </div>
+                            <div class="property-description">
+                                <p>阿佐ヶ谷のモダンファサード住宅。現代的な正面デザインで都市型住居を体現。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card hidden-property" style="display: none;">
+                        <div class="property-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/house/image01.jpg') center/cover;">
+                            <div class="property-status">クラシック</div>
+                            <div class="property-price">12.5万円</div>
+                        </div>
+                        <div class="property-content">
+                            <h3 class="property-title">クラシックハウスZ*棟</h3>
+                            <p class="property-location">📍 豊島区駒込*-**-*</p>
+                            <div class="property-features">
+                                <div class="feature">🏠 2LDK</div>
+                                <div class="feature">📐 68㎡</div>
+                                <div class="feature">🏛️ 古典様式</div>
+                                <div class="feature">⭐ スタンダード</div>
+                            </div>
+                            <div class="property-description">
+                                <p>駒込のクラシック様式住宅。時代を超えて愛される古典的なデザインが魅力。</p>
+                            </div>
+                            <button class="property-cta">詳細を見る</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;">
+                    <button id="load-more-btn" class="cta-button cta-secondary">もっと見る</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 物件検索のコツセクション -->
+        <section class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Tips</div>
+                    <h2 class="section-title">物件選びのポイント</h2>
+                    <p class="section-description">理想の住まいを見つけるためのプロからのアドバイスをご紹介します。</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-13.svg" alt="立地"></div>
+                        <h3 class="service-title">立地の重要性</h3>
+                        <p class="service-description">駅からの距離、周辺環境、将来の開発計画など、立地は長期的な資産価値に大きく影響します。通勤・通学の利便性も重要な要素です。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-14.svg" alt="建物品質"></div>
+                        <h3 class="service-title">建物の品質</h3>
+                        <p class="service-description">構造、築年数、管理状況をしっかりチェック。耐震性能や省エネ性能なども重要な判断基準となります。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-15.svg" alt="コスト"></div>
+                        <h3 class="service-title">総合的なコスト</h3>
+                        <p class="service-description">家賃や購入価格だけでなく、管理費、修繕積立金、税金なども含めた総合的なコストを検討することが大切です。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-16.svg" alt="セキュリティ"></div>
+                        <h3 class="service-title">セキュリティ</h3>
+                        <p class="service-description">オートロック、防犯カメラ、管理体制など、安心して住めるセキュリティ環境が整っているか確認しましょう。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-17.svg" alt="将来性"></div>
+                        <h3 class="service-title">将来性</h3>
+                        <p class="service-description">周辺の開発計画や人口動態、需要の変化を考慮し、将来的な価値の変動を予測することが重要です。</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon"><img src="images/SVG/Consulting expanded-18.svg" alt="プロに相談"></div>
+                        <h3 class="service-title">プロに相談</h3>
+                        <p class="service-description">物件選びで迷ったら、経験豊富な専門スタッフにお気軽にご相談ください。最適な選択をサポートいたします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/realestate_logo.svg" alt="奥田不動産">
+                        <h3>奥田不動産</h3>
+                    </div>
+                    <p>東京都で30年の実績を誇る総合不動産会社。お客様の理想の住まい探しを全力でサポートいたします。</p>
+                    <p><strong>営業時間:</strong> 9:00-19:00（年中無休）</p>
+                    <p><strong>TEL:</strong> 03-1234-5678</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>サービス</h3>
+                    <a href="services.html">賃貸物件仲介</a>
+                    <a href="services.html">売買仲介</a>
+                    <a href="services.html">投資物件コンサルティング</a>
+                    <a href="services.html">物件管理・メンテナンス</a>
+                    <a href="services.html">住宅ローン相談</a>
+                    <a href="services.html">法務・税務サポート</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>エリア情報</h3>
+                    <a href="#">東京23区</a>
+                    <a href="#">横浜市</a>
+                    <a href="#">川崎市</a>
+                    <a href="#">さいたま市</a>
+                    <a href="#">千葉市</a>
+                    <a href="#">八王子市</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>会社情報</h3>
+                    <a href="about.html">会社概要</a>
+                    <a href="contact.html">お問い合わせ</a>
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">特定商取引法に基づく表記</a>
+                    <a href="#">免許・登録情報</a>
+                    <a href="#">採用情報</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 奥田不動産株式会社. All Rights Reserved. | 東京都知事免許(8)第1234号 | 公益社団法人東京都宅地建物取引業協会会員</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

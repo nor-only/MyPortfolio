@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像テスト</title>
+    <style>
+        img { max-width: 200px; margin: 10px; border: 1px solid #ccc; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>画像表示テスト</h1>
+    
+    <h2>主要画像</h2>
+    <img src="images/starry-night-camping.jpg" alt="星空キャンプ" onerror="this.nextSibling.style.display='block'">
+    <div class="error" style="display:none">エラー: starry-night-camping.jpg</div>
+    
+    <img src="images/wooden-pod-cabins.jpg" alt="木製ポッドキャビン" onerror="this.nextSibling.style.display='block'">
+    <div class="error" style="display:none">エラー: wooden-pod-cabins.jpg</div>
+    
+    <img src="images/campfire-cooking.jpg" alt="焚火料理" onerror="this.nextSibling.style.display='block'">
+    <div class="error" style="display:none">エラー: campfire-cooking.jpg</div>
+    
+    <img src="images/forest-tent-setup.jpg" alt="森テント設営" onerror="this.nextSibling.style.display='block'">
+    <div class="error" style="display:none">エラー: forest-tent-setup.jpg</div>
+    
+    <video width="200" controls>
+        <source src="images/hero-video-camping.mp4" type="video/mp4">
+        動画が表示されません
+    </video>
+    
+    <p>すべての画像が表示されていれば、パスは正しく設定されています。</p>
+</body>
+</html>
